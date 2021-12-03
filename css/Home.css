@@ -1,0 +1,1122 @@
+
+@font-face {
+
+	font-family: "font-candarai";
+	src: url('Candarai.ttf');
+}
+
+@font-face {
+
+	font-family: "font-gabriola";
+	src: url('Gabriola.ttf');
+}
+
+@font-face {
+
+	font-family: "font-trebuc";
+	src: url('trebuc.ttf');
+}
+
+html {
+
+	scroll-behavior: smooth;
+}
+
+/*NAVBAR - COMPONENT*/
+
+nav .label-company {
+
+	font-size: 24px;
+}
+
+a.navbar-text {
+
+	position: relative;
+	bottom: 0.01px;
+	text-decoration: none;
+	color: inherit;
+}
+
+a.navbar-text:hover {
+
+	color: #808080;
+	border-bottom: #ffffff solid 1px;
+	cursor: pointer;
+}
+
+.nav-collapse {
+
+	position: fixed; 
+	z-index: 40; 
+	top: 71px;
+	left: 0px;
+	height: 1000px;
+	background-color: cadetblue;
+	transition: all 1s ease 0s;
+}
+
+/*NAVBAR - COMPONENT*/
+
+
+/*CAROUSEL - SLIDE*/
+
+.carousel-header .carousel {
+
+	position: relative;
+	top: 78px;
+	z-index: 20;
+	overflow: hidden;
+}
+
+.picture-slide-one, .picture-slide-two, .picture-slide-three {
+
+	background-size: cover;
+	height: 580px;
+}
+
+.picture-slide-one {
+
+	background-image: url('gambar-carousel-satu.jpg');
+}
+
+.picture-slide-two {
+
+	background-image: url('gambar-carousel-dua.jpg');
+}
+
+.picture-slide-three {
+
+	background-image: url('gambar-carousel-tiga.jpg');
+}
+
+.picture-slide-gradient {
+
+	background-image: linear-gradient(to top, black, rgba(0,0,0,0.1));
+	height: 580px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.carousel-header .carousel-control-prev, .carousel-header .carousel-control-next {
+
+	width: 120px;
+	position: absolute;
+}
+
+.carousel-header .carousel-control-next {
+
+	right: -120px;
+	transition: all 1s ease 0s;
+}
+
+.carousel-header .carousel-control-prev {
+
+	left: -120px;
+	transition: all 1s ease 0s;
+}
+
+.carousel-header .carousel-caption {
+
+	height: 545px;
+}
+
+.carousel-header .label-company {
+
+	font-size: 55px;
+}
+
+.caption-carousel {
+
+	font-size: 25px;
+	font-family: "font-candarai";	
+}
+
+.carousel-caption div.btn {
+
+	border-radius: 25px;
+	transition: all 1s ease-in 0s;
+}
+
+.carousel-caption .btn {
+
+	font-family: "font-candarai";
+}
+
+.carousel-caption .btn:hover ::after {
+
+	content: " >>";
+}
+
+/*CAROUSEL - SLIDE*/
+
+
+/*SECTION - REASON*/
+
+.section-reason .content-reason, .section-reason .content-picture {
+
+	height: 400px;
+	overflow: auto;
+}
+
+.section-reason .section-title {
+
+	font-size: 42px;
+}
+
+.section-reason .section-subtitle {
+ 
+	font-size: 35px;
+}
+
+.section-reason .section-content {
+
+	font-family: "font-trebuc";
+	font-size: 16px;	
+}
+
+.content-picture .img-fluid {
+
+	width: 450px;
+}
+
+.shadow-image {
+
+	opacity: 0.5;
+}
+
+/*SECTION - REASON*/
+
+
+/*SECTION - SERVICE*/
+
+.section-service .section-title {
+
+	font-size: 42px;
+}
+
+.section-box, .animation-aos, .animate-aos {
+
+	height: 190px;
+	cursor: pointer;
+}
+
+.section-box .rounded-top, .section-box .rounded-left {
+
+	height: 70px;
+}
+
+.section-box .section-content {
+
+	font-size: 13.1px;
+	position: relative;
+	top: 0px;
+	height: 120px;
+	font-family: "font-trebuc";	
+}
+
+/*SECTION - SERVICE*/
+
+
+/*SECTION - WHATSAPP*/
+
+.btn-whatsapp {
+
+	height: 65px;
+	width: 65px;
+	z-index: 10;
+}
+
+.btn-whatsapp .fa-whatsapp {
+
+	font-size: 45px;
+}
+
+/*SECTION - WHATSAPP*/
+
+
+/*SECTION - PROJECT*/
+
+.section-showoff .section-title {
+
+	font-size: 43px;
+}
+
+.my-3 .img-thumbnail {
+
+	transform: translate(0px,0px);
+	transition: all 1s ease 0s;
+}
+
+.my-3 .img-thumbnail:hover {
+
+	transform: translate(0px,-10px);
+}
+
+/*SECTION - PROJECT*/
+
+
+/*SECTION - CONTACT*/
+
+.section-form .section-title {
+
+	font-size: 43px;
+}
+
+.section-form .section-subtitle {
+
+	font-size: 19px;
+}
+
+.alert-attention .col-12 {
+
+	position: relative;
+	top: 0px;
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+
+.form-label {
+
+	font-family: "font-trebuc";
+	font-size: 18.5px;
+}
+
+.font-alert {
+
+	font-family: "font-gabriola";
+	font-size: 22px;
+	word-spacing: 0.15em;
+}
+
+.section-form .btn {
+
+	font-family: "font-gabriola";
+	font-size: 21px;
+}
+
+.font-warning {
+
+	color: darkred;
+	position: absolute;
+	font-size: 15px;
+	top: 65px;
+}
+
+/*SECTION - CONTACT*/
+
+
+/*SECTION - FOOTER*/
+
+footer.jumbotron {
+
+	position: relative;
+	top: 35px;
+	z-index: 10;
+}
+
+footer.jumbotron .label-company {
+
+	font-size: 23px;
+	position: relative;
+	bottom: 0px;	
+}
+
+.jumbotron .img-fluid {
+
+	position: relative;
+	bottom: 2.5px;
+}
+
+.jumbotron .media {
+
+	color: inherit;
+	text-decoration: none;
+	position: relative;
+	right: 9px;
+}
+
+.jumbotron .media-body {
+
+	position: relative;
+	bottom: 4px;
+}
+
+.jumbotron [src='css/logo.jpg'] {
+
+	width: 40px;
+}	
+
+.jumbotron [data-toggle="collapse"] {
+
+	border-bottom: white solid thin;
+}
+
+.jumbotron .fa-plus {	
+
+	position: relative;
+	top: 8px;
+}
+
+.jumbotron-explain, .jumbotron-title {
+
+	font-family: "font-trebuc";
+}
+
+.pt-5 .jumbotron-explain, .text-lg-left .jumbotron-explain {
+
+	font-size: 14.5px;
+}
+
+/*SECTION - FOOTER*/
+
+
+.label-company {
+
+	font-family: "font-candarai";
+}
+
+.section-subtitle {
+
+	font-family: "font-candarai";
+}
+
+.section-title {
+
+	word-spacing: 0.2em;
+	font-family: "font-gabriola";
+}
+
+.delimiter-line {
+
+	height: 5px;
+	background-color: gainsboro;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+
+	.carousel-header .carousel {
+
+		top: 70px;
+	}
+}
+
+@media only screen and (min-width: 873px) and (max-width: 991px) {
+
+	.section-reason .section-subtitle {
+
+		font-size: 25.5px;
+	}
+
+	.section-reason .section-content {
+
+		font-size: 14.5px;	
+	}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 872px) {
+
+	.section-reason .section-subtitle {
+
+		font-size: 23px;
+	}
+
+	.section-reason .section-content {
+
+		font-size: 13.5px;	
+	}	
+}
+
+@media only screen and (min-width: 1200px) { 
+
+	.section-box:hover {
+
+		transform: scale(1.05);
+		transition: all 1s ease 0s;	
+	}		
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+	.carousel-header .carousel-control-prev, .carousel-header .carousel-control-next {
+
+		width: 100px;
+	}
+
+	.caption-carousel {
+
+		font-size: 22px;
+	}
+
+	.carousel-header .label-company {
+
+		font-size: 52px;
+	}
+
+	.section-reason .section-title {
+
+		font-size: 37px;
+	}
+
+	.section-service .section-title {
+
+		font-size: 37px;
+	}	
+
+	.section-reason .section-subtitle {
+
+		font-size: 25px;
+	}
+
+	.section-form .section-title, .section-showoff .section-title {
+
+		font-size: 40px;
+	}		
+
+	.section-box .rounded-top, .section-box .rounded-left {
+
+		height: 55px;
+	}	
+
+	.section-box .section-content, .animation-aos .px-2 {
+
+		font-size: 12.3px;
+		top: 0px;
+		height: 140px;
+	}
+
+	.section-box .section-content {
+
+		height: 135px;		
+	}
+
+	.section-box:hover {
+
+		transform: scale(1.05);
+		transition: all 1s ease 0s;	
+	}	
+
+	.section-reason .section-content {
+
+		font-size: 15.2px;		
+	}	
+
+	.btn-whatsapp {
+
+		height: 60px;
+		width: 60px;
+	}	
+
+	.btn-whatsapp .fa-whatsapp {
+
+		font-size: 40px;
+	}		
+
+	.section-form .section-subtitle {
+
+		font-size: 18px;
+	}		
+
+	.form-label {
+
+		font-size: 17.5px;
+	}	
+
+	.section-form .btn {
+
+		font-size: 20.5px;
+	}				
+
+	.jumbotron-title {
+
+		font-size: 18px;
+		position: relative;
+		top: 4px;
+	}
+
+	.jumbotron-explain {
+
+		font-size: 15.5px;
+	}
+
+	footer.jumbotron .label-company {
+
+		font-size: 23px;
+		top: 1px;
+	}		
+
+	.pt-5 .jumbotron-explain, .text-lg-left .jumbotron-explain {
+
+		font-size: 14.3px;
+	}			
+
+	.jumbotron [src='css/logo.jpg'] {
+
+		width: 40px;
+	}
+
+	.jumbotron .media-body {
+
+		position: relative;
+		bottom: 4px;
+	}
+
+	.carousel-header .carousel-control-next {
+
+		right: -100px;
+	}
+
+	.carousel-header .carousel-control-prev {
+
+		left: -100px;
+	}			
+
+	.font-warning {
+
+		font-size: 15px;
+		top: 65px;
+	}		
+
+	a.navbar-text:hover {
+
+		color: black;
+		border-bottom: #ffffff solid 0px;
+		cursor: none;
+	}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.nav-collapse {
+
+		left: -245px;
+	}
+
+	.picture-slide-one, .picture-slide-two, .picture-slide-three {
+
+		height: 480px;
+	}
+
+	.carousel-header .carousel-control-prev, .carousel-header .carousel-control-next {
+
+		width: 80px;
+	}
+
+	.caption-carousel {
+
+		font-size: 20px;
+	}
+
+	.carousel-header .label-company {
+
+		font-size: 37px;
+	}
+
+	.section-reason .section-title {
+
+		font-size: 32px;
+	}
+
+	.content-picture .img-fluid {
+
+		width: 400px;
+	}
+
+	.section-service .section-title {
+
+		font-size: 32px;
+	}	
+
+	.section-form .section-title, .section-showoff .section-title {
+
+		font-size: 33px;
+	}		
+
+	.section-box .section-content {
+
+		font-size: 11.1px;
+		top: 0px;
+		height: 145px;
+	}
+
+	.section-box, .animation-aos, .animate-aos {
+
+		height: 200px;
+		cursor: default;
+	}
+
+	.section-box:hover {
+
+		transform: scale(1.05);
+		transition: all 1s ease 0s;	
+	}	
+
+	.section-box .rounded-top, .section-box .rounded-left {
+
+		height: 55px;
+	}
+
+	.carousel-header .carousel-caption {
+
+		height: 440px;
+	}	
+
+	.btn-whatsapp {
+
+		height: 60px;
+		width: 60px;
+	}	
+
+	.btn-whatsapp .fa-whatsapp {
+
+		font-size: 40px;
+	}	
+
+	.section-form .section-subtitle {
+
+		font-size: 14.5px;
+	}
+
+	.form-label {
+
+		font-size: 16px;
+	}
+
+	.font-alert	{
+
+		font-size: 21px;
+	}
+
+	.section-form .btn {
+
+		font-size: 20px;
+	}		
+
+	.jumbotron-title {
+
+		font-size: 16.5px;
+	}
+
+	.jumbotron-explain {
+
+		font-size: 16.5px;
+	}
+
+	.jumbotron .media-body {
+
+		position: relative;
+		bottom: 4px;
+	}
+
+	.pt-5 .jumbotron-explain, .text-lg-left .jumbotron-explain {
+
+		font-size: 17px;
+	}		
+
+	footer.jumbotron .label-company {
+
+		font-size: 32px;
+		top: 4px;
+	}		
+
+	.jumbotron [src='css/logo.jpg'] {
+
+		width: 52px;
+	}
+
+	.alert-danger {
+
+		left: 18.5px;
+	}
+
+	.font-warning {
+
+		font-size: 13px;
+		top: 67px;
+	}
+
+	a.navbar-text:hover {
+
+		color: black;
+		border-bottom: #ffffff solid 0px;
+		cursor: none;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+	.nav-collapse {
+
+		left: -187px;
+	}
+
+	.picture-slide-one, .picture-slide-two, .picture-slide-three {
+
+		height: 350px;
+	}
+
+	.carousel-header .carousel-control-prev, .carousel-header .carousel-control-next {
+
+		width: 60px;
+	}
+
+	.caption-carousel {
+
+		font-size: 15px;
+	}
+
+	.carousel-header .label-company {
+
+		font-size: 32px;
+	}
+
+	.section-reason .section-title {
+
+		font-size: 27px;
+	}
+
+	.section-service .section-title {
+
+		font-size: 27px;
+	}
+
+	.section-form .section-title, .section-showoff .section-title {
+
+		font-size: 28px;
+	}		
+
+	.section-reason .section-subtitle {
+
+		font-size: 27px;
+	}
+
+	.section-box {
+
+		height: 140px;
+		cursor: default;
+	}
+
+	.section-box .rounded-top, .section-box .rounded-left {
+
+		height: 140px;
+	}
+
+	.section-box .section-content {
+
+		top: -25px;
+		height: 99px;
+		font-size: 12px;		
+	}	
+
+	.carousel-header .carousel-caption {
+
+		height: 310px;
+	}
+
+	.section-reason .section-content {
+
+		font-size: 14px;	
+	}	
+
+	.shadow-image {
+
+		margin: 0px auto;
+	}	
+
+	.section-reason .img-fluid {
+
+		width: 370px;
+	}	
+
+	.btn-whatsapp {
+
+		height: 55px;
+		width: 55px;
+	}	
+
+	.btn-whatsapp .fa-whatsapp {
+
+		font-size: 35px;
+	}
+
+	.section-form .section-subtitle {
+
+		font-size: 17px;
+	}	
+
+	.form-label {
+
+		font-size: 17.5px;
+	}	
+
+	.font-alert {
+
+		font-size: 20px;
+	}
+
+	.section-form .btn {
+
+		font-size: 19.5px;
+	}		
+
+	.jumbotron {
+
+		top: 32px;
+	}		
+
+	.jumbotron-title {
+
+		font-size: 17.5px;
+	}
+
+	.pt-5 .jumbotron-explain, .text-lg-left .jumbotron-explain {
+
+		font-size: 17px;
+	}	
+
+	.jumbotron-explain {
+
+		font-size: 16.5px;
+	}
+
+	footer.jumbotron .label-company {
+
+		font-size: 32px;
+		top: 4px;
+	}		
+
+	.jumbotron [src='css/logo.jpg'] {
+
+		width: 52px;
+	}
+
+	.jumbotron .media-body {
+
+		bottom: 4px;
+	}
+
+	.font-warning {
+
+		position: relative;
+		font-size: 14.5px;
+		top: 8px;
+	}		
+
+	a.navbar-text:hover {
+
+		color: black;
+		border-bottom: #ffffff solid 0px;
+		cursor: none;
+	}	
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+
+	/*NAVBAR - COMPONENT*/
+
+	.nav-collapse {
+
+		left: -280px;
+	}
+
+	a.navbar-text:hover {
+
+		color: black;
+		border-bottom: #ffffff solid 0px;
+		cursor: none;
+	}
+
+	/*NAVBAR - COMPONENT*/	
+
+
+	/*CAROUSEL - SLIDE*/
+
+	.picture-slide-one, .picture-slide-two, .picture-slide-three {
+
+		height: 300px;
+	}	
+
+	.carousel-header .carousel-control-prev, .carousel-header .carousel-control-next {
+
+		width: 40px;
+	}
+
+	.carousel-header .carousel-caption {
+
+		height: 260px;
+	}
+
+	.caption-carousel {
+
+		font-size: 12px;
+	}
+
+	.carousel-header .label-company {
+
+		font-size: 24px;
+	}
+
+	/*CAROUSEL - SLIDE*/
+
+
+	/*SECTION - REASON*/
+
+	.section-reason .section-title {
+
+		font-size: 24.5px;
+	}
+
+	.section-reason .img-fluid {
+
+		width: 320px;
+	}
+
+	.section-reason .section-content {
+
+		font-size: 13px;
+	}
+
+	.shadow-image {
+
+		margin: 0px auto;
+	}	
+
+	.section-reason .section-subtitle {
+
+		font-size: 23px;
+	}
+
+	/*SECTION - REASON*/
+
+
+	/*SECTION - SERVICE*/
+
+	.section-service .section-title {
+
+		font-size: 24.5px;
+	}
+
+	.section-box {
+
+		height: 120px;
+		cursor: default;
+	}
+
+	.section-box .rounded-top, .section-box .rounded-left {
+
+		height: 120px;
+	}	
+
+	.section-box .section-content {
+
+		top: -8px;
+		font-size: 12px;
+		height: 120px;
+	}	
+
+	/*SECTION - SERVICE*/
+
+
+	/*SECTION - PROJECT*/
+
+	.section-showoff .section-title {
+
+		font-size: 25px;
+	}	
+
+	/*SECTION - PROJECT*/
+
+
+	/*SECTION - WHATSAPP*/
+
+	.btn-whatsapp {
+
+		height: 50px;
+		width: 50px;
+	}	
+
+	.btn-whatsapp .fa-whatsapp {
+
+		font-size: 30px;
+	}
+
+	/*SECTION - WHATSAPP*/	
+
+
+	/*SECTION - CONTACT*/
+
+	.section-form .section-subtitle {
+
+		font-size: 16px;
+	}
+
+	.form-label {
+
+		font-size: 15.5px;
+	}
+
+	.font-alert {
+
+		font-size: 19px;
+	}	
+
+	.section-form .btn {
+
+		font-size: 19px;
+	}	
+
+	.section-form .section-title {
+
+		font-size: 25px;
+	}		
+
+	.font-warning {
+
+		position: relative;
+		font-size: 13.5px;
+		top: 3px;
+	}	
+
+	/*SECTION - CONTACT*/
+
+
+	/*SECTION - FOOTER*/
+
+	.jumbotron {
+
+		top: 32px;
+	}
+
+	footer.jumbotron .label-company {
+
+		font-size: 30px;
+		top: 4px;
+	}		
+
+	.jumbotron [src='css/logo.jpg'] {
+
+		width: 50px;
+	}
+
+	.pt-5 .jumbotron-explain {
+
+		font-size: 16.4px;
+	}
+
+	.jumbotron-explain {
+
+		font-size: 16.4px;
+	}
+
+	.jumbotron-title {
+
+		font-size: 16px;		
+	}
+
+	.jumbotron .media-body {
+
+		bottom: 4px;
+	}
+
+	/*SECTION - FOOTER*/
+}
