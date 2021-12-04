@@ -44,6 +44,13 @@ a.navbar-text:hover {
 	cursor: pointer;
 }
 
+.nav-collapse .navbar-text:hover {
+
+	color: darkred;
+	border-bottom: #ffffff solid 0px;
+	cursor: none;
+}
+
 .nav-collapse {
 
 	position: fixed; 
@@ -51,7 +58,7 @@ a.navbar-text:hover {
 	top: 71px;
 	left: 0px;
 	height: 1000px;
-	background-color: cadetblue;
+	background-color: gainsboro;
 	transition: all 1s ease 0s;
 }
 
