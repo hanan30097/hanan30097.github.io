@@ -917,12 +917,13 @@ footer.jumbotron .label-company {
 	footer.jumbotron .label-company {
 
 		font-size: 32px;
-		top: 4px;
+		top: -2px;
+		left: 2px;
 	}		
 
 	.jumbotron [src='css/logo_nadha.ico'] {
 
-		width: 52px;
+		width: 45px;
 	}
 
 	.jumbotron .media-body {
@@ -1125,8 +1126,8 @@ footer.jumbotron .label-company {
 	footer.jumbotron .label-company {
 
 		font-size: 25px;
-		top: 0px;
-		/*left: 10px;*/
+		top: 2px;
+		left: 2px;
 	}		
 
 	.jumbotron [src='css/logo_nadha.ico'] {
