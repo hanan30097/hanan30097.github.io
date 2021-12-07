@@ -62,6 +62,11 @@ a.navbar-text:hover {
 	transition: all 1s ease 0s;
 }
 
+nav [src='css/logo_nadha.ico'] {
+
+	width: 40px;
+}	
+
 /*NAVBAR - COMPONENT*/
 
 
@@ -184,11 +189,24 @@ a.navbar-text:hover {
 .content-picture .img-fluid {
 
 	width: 450px;
+	transform: translate(0px,0px);
+	transition: all 1s ease 0s;
+}
+
+.content-picture .img-fluid:hover {
+
+	transform: translate(0,-15px);
 }
 
 .shadow-image {
 
 	opacity: 0.5;
+}
+
+.content-picture .shadow-image {
+
+	width: 370px;
+	transition: all 1s ease-in 0s;
 }
 
 /*SECTION - REASON*/
@@ -210,6 +228,7 @@ a.navbar-text:hover {
 .section-box .rounded-top, .section-box .rounded-left {
 
 	height: 70px;
+	background-color: black;
 }
 
 .section-box .section-content {
@@ -325,7 +344,7 @@ footer.jumbotron .label-company {
 
 	font-size: 23px;
 	position: relative;
-	bottom: 0px;	
+	top: 1px;
 }
 
 .jumbotron .img-fluid {
@@ -348,9 +367,9 @@ footer.jumbotron .label-company {
 	bottom: 4px;
 }
 
-.jumbotron [src='css/logo.jpg'] {
+.jumbotron [src='css/logo_nadha.ico'] {
 
-	width: 40px;
+	width: 35px;
 }	
 
 .jumbotron [data-toggle="collapse"] {
@@ -395,8 +414,7 @@ footer.jumbotron .label-company {
 
 .delimiter-line {
 
-	height: 5px;
-	background-color: gainsboro;
+	height: 5px;x
 }
 
 
@@ -419,6 +437,11 @@ footer.jumbotron .label-company {
 
 		font-size: 14.5px;	
 	}	
+
+	.content-picture .shadow-image {
+
+		width: 285px;
+	}	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 872px) {
@@ -431,6 +454,11 @@ footer.jumbotron .label-company {
 	.section-reason .section-content {
 
 		font-size: 13.5px;	
+	}	
+
+	.content-picture .shadow-image {
+
+		width: 70%;
 	}	
 }
 
@@ -557,7 +585,7 @@ footer.jumbotron .label-company {
 		font-size: 14.3px;
 	}			
 
-	.jumbotron [src='css/logo.jpg'] {
+	.jumbotron [src='css/logo_nadha.ico'] {
 
 		width: 40px;
 	}
@@ -726,7 +754,7 @@ footer.jumbotron .label-company {
 		top: 4px;
 	}		
 
-	.jumbotron [src='css/logo.jpg'] {
+	.jumbotron [src='css/logo_nadha.ico'] {
 
 		width: 52px;
 	}
@@ -892,7 +920,7 @@ footer.jumbotron .label-company {
 		top: 4px;
 	}		
 
-	.jumbotron [src='css/logo.jpg'] {
+	.jumbotron [src='css/logo_nadha.ico'] {
 
 		width: 52px;
 	}
@@ -1096,13 +1124,14 @@ footer.jumbotron .label-company {
 
 	footer.jumbotron .label-company {
 
-		font-size: 30px;
-		top: 4px;
+		font-size: 25px;
+		top: -1px;
+		left: 10px;
 	}		
 
-	.jumbotron [src='css/logo.jpg'] {
+	.jumbotron [src='css/logo_nadha.ico'] {
 
-		width: 50px;
+		width: 40px;
 	}
 
 	.pt-5 .jumbotron-explain {

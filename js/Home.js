@@ -151,6 +151,8 @@ var warning_name=document.querySelectorAll(".form-group .warning-name");
   var warning_alpha=document.querySelectorAll(".form-group .warning-alpha");
 var warning_company=document.querySelectorAll(".form-group .warning-company");
 
+var shadow_img_lg=document.getElementById("nav-service");
+
 function NavCollapse () {
 
     for (var i=0; i<2; i++) {
@@ -727,6 +729,16 @@ function Button_Dismissible () {
     }
 }
 
+function IMG_REASON_OVER () {
+
+    shadow_img_lg.setAttribute("style","width: 335px; transition-timing-function: ease");
+}
+
+function IMG_REASON_OUT () {
+
+    shadow_img_lg.setAttribute("style","transition-timing-function: ease");
+}
+
 var Navbar_Toggler=document.querySelector('button.navbar-toggler');
 Navbar_Toggler.addEventListener("click",NavCollapse);
 
@@ -739,6 +751,10 @@ submit_md.addEventListener("click",validation_form_md);
 
 var submit_sm=document.querySelector(".d-md-none [type='submit']");
 submit_sm.addEventListener("click",validation_form_xs);
+
+var img_reason=document.querySelector(".content-picture .img-fluid");
+img_reason.addEventListener("mouseover",IMG_REASON_OVER);
+img_reason.addEventListener("mouseout",IMG_REASON_OUT);
 
 var input_form=document.querySelectorAll("[action='Form_Nadha.php'] .form-control");
 
