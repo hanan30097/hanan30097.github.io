@@ -1125,7 +1125,7 @@ footer.jumbotron .label-company {
 	footer.jumbotron .label-company {
 
 		font-size: 25px;
-		top: -1px;
+		top: 0px;
 		/*left: 10px;*/
 	}		
 
