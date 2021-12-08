@@ -152,6 +152,8 @@ var warning_name=document.querySelectorAll(".form-group .warning-name");
 var warning_company=document.querySelectorAll(".form-group .warning-company");
 
 var shadow_img_lg=document.getElementById("nav-service");
+  var boolean_nav_prev=false;
+var attribute_nav_prev;
 
 function NavCollapse () {
 
@@ -739,6 +741,40 @@ function IMG_REASON_OUT () {
     shadow_img_lg.setAttribute("style","transition-timing-function: ease");
 }
 
+function NAVBAR_BUTTON_LG (e) {
+
+    if(boolean_nav_prev==false) {
+
+        e.target.setAttribute("style","color: #808080; border-bottom: #ffffff solid 1px;");
+        attribute_nav_prev=e.target;
+        boolean_nav_prev=e.target.hasAttribute("style");
+
+    } else {
+
+        attribute_nav_prev.removeAttribute("style");
+        e.target.setAttribute("style","color: #808080; border-bottom: #ffffff solid 1px;");
+        attribute_nav_prev=e.target;
+        boolean_nav_prev=e.target.hasAttribute("style");
+    }  
+}
+
+function NAVBAR_BUTTON_SM (e) {
+
+    if(boolean_nav_prev==false) {
+
+        e.target.setAttribute("style","color: darkred");
+        attribute_nav_prev=e.target;
+        boolean_nav_prev=e.target.hasAttribute("style");
+
+    } else {
+
+        attribute_nav_prev.removeAttribute("style");
+        e.target.setAttribute("style","color: darkred");
+        attribute_nav_prev=e.target;
+        boolean_nav_prev=e.target.hasAttribute("style");
+    }  
+}
+
 var Navbar_Toggler=document.querySelector('button.navbar-toggler');
 Navbar_Toggler.addEventListener("click",NavCollapse);
 
@@ -768,4 +804,18 @@ var select_form=document.querySelectorAll("[action='Form_Nadha.php'] .custom-sel
   for(var i=0; i<2; i++) {
 
       select_form[i].addEventListener("blur",blur_select);
+  }
+
+var nav_button_lg=document.querySelectorAll(".navbar-expand .navbar-text");
+
+  for(var i=0; i<nav_button_lg.length; i++) {
+
+      nav_button_lg[i].addEventListener("click",NAVBAR_BUTTON_LG);
+  }
+
+var nav_button_sm=document.querySelectorAll(".nav-collapse .navbar-text");
+
+  for(var i=0; i<nav_button_sm.length; i++) {
+
+      nav_button_sm[i].addEventListener("click",NAVBAR_BUTTON_SM);
   }
