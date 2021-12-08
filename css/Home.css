@@ -240,6 +240,16 @@ nav [src='css/logo_nadha.ico'] {
 	font-family: "font-trebuc";	
 }
 
+.fa-google-ads {
+
+	width: 15%;
+}
+
+.section-box .rounded-left {
+
+	width: 0px;
+}
+
 /*SECTION - SERVICE*/
 
 
@@ -618,6 +628,11 @@ footer.jumbotron .label-company {
 		border-bottom: #ffffff solid 0px;
 		cursor: none;
 	}	
+
+	.fa-google-ads {
+
+		width: 11%;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -944,7 +959,18 @@ footer.jumbotron .label-company {
 		color: black;
 		border-bottom: #ffffff solid 0px;
 		cursor: none;
-	}	
+	}
+
+	.section-box .rounded-left {
+
+		width: 80px;
+	}
+
+	.fa-google-ads {
+
+		width: 45px;
+		height: 45px;
+	}
 }
 
 @media only screen and (min-width: 0px) and (max-width: 575px) {
@@ -1049,7 +1075,18 @@ footer.jumbotron .label-company {
 		top: -8px;
 		font-size: 12px;
 		height: 120px;
-	}	
+	}
+
+	.fa-google-ads {
+
+		width: 30px;
+		height: 30px;
+	}
+
+	.section-box .rounded-left {
+
+		width: 63px;
+	}
 
 	/*SECTION - SERVICE*/
 
