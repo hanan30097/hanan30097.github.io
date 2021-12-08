@@ -146,11 +146,6 @@ nav [src='css/logo_nadha.ico'] {
 .carousel-caption div.btn {
 
 	border-radius: 25px;
-	transition: all 1s ease-in 0s;
-}
-
-.carousel-caption .btn {
-
 	font-family: "font-candarai";
 }
 
@@ -477,18 +472,6 @@ footer.jumbotron .label-company {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-	/*NAVBAR - COMPONENT*/
-
-/*	a.navbar-text:hover {
-
-		color: black;
-		border-bottom: #ffffff solid 0px;
-		cursor: none;
-	}	*/
-
-	/*NAVBAR - COMPONENT*/
-
-
 	/*CAROUSEL - SLIDE*/
 
 	.carousel-header .carousel-control-prev, .carousel-header .carousel-control-next {
@@ -666,13 +649,6 @@ footer.jumbotron .label-company {
 	.nav-collapse {
 
 		left: -245px;
-	}
-
-	a.navbar-text:hover {
-
-		color: black;
-		border-bottom: #ffffff solid 0px;
-		cursor: none;
 	}
 
 	/*NAVBAR - COMPONENT*/
@@ -854,12 +830,6 @@ footer.jumbotron .label-company {
 	.nav-collapse {
 
 		left: -187px;
-	}
-	a.navbar-text:hover {
-
-		color: black;
-		border-bottom: #ffffff solid 0px;
-		cursor: none;
 	}
 
 	/*NAVBAR - COMPONENT*/
@@ -1067,13 +1037,6 @@ footer.jumbotron .label-company {
 	.nav-collapse {
 
 		left: -280px;
-	}
-
-	a.navbar-text:hover {
-
-		color: black;
-		border-bottom: #ffffff solid 0px;
-		cursor: none;
 	}
 
 	/*NAVBAR - COMPONENT*/	
