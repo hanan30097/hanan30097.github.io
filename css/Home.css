@@ -219,12 +219,6 @@ nav [src='css/logo_nadha.ico'] {
 	font-size: 42px;
 }
 
-.section-box, .animation-aos, .animate-aos {
-
-	height: 190px;
-	cursor: pointer;
-}
-
 .section-box .rounded-top, .section-box .rounded-left {
 
 	height: 70px;
@@ -483,6 +477,20 @@ footer.jumbotron .label-company {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
+	/*NAVBAR - COMPONENT*/
+
+/*	a.navbar-text:hover {
+
+		color: black;
+		border-bottom: #ffffff solid 0px;
+		cursor: none;
+	}	*/
+
+	/*NAVBAR - COMPONENT*/
+
+
+	/*CAROUSEL - SLIDE*/
+
 	.carousel-header .carousel-control-prev, .carousel-header .carousel-control-next {
 
 		width: 100px;
@@ -498,41 +506,56 @@ footer.jumbotron .label-company {
 		font-size: 52px;
 	}
 
+	.carousel-header .carousel-control-next {
+
+		right: -100px;
+	}
+
+	.carousel-header .carousel-control-prev {
+
+		left: -100px;
+	}			
+
+	/*CAROUSEL - SLIDE*/
+
+
+	/*SECTION - REASON*/
+
 	.section-reason .section-title {
 
 		font-size: 37px;
 	}
-
-	.section-service .section-title {
-
-		font-size: 37px;
-	}	
 
 	.section-reason .section-subtitle {
 
 		font-size: 25px;
 	}
 
-	.section-form .section-title, .section-showoff .section-title {
+	.section-reason .section-content {
 
-		font-size: 40px;
-	}		
+		font-size: 15.2px;		
+	}	
+
+	/*SECTION - REASON*/
+
+
+	/*SECTION - SERVICE*/
+
+	.section-service .section-title {
+
+		font-size: 37px;
+	}	
 
 	.section-box .rounded-top, .section-box .rounded-left {
 
 		height: 55px;
 	}	
 
-	.section-box .section-content, .animation-aos .px-2 {
+	.section-box .section-content {
 
 		font-size: 12.3px;
 		top: 0px;
 		height: 140px;
-	}
-
-	.section-box .section-content {
-
-		height: 135px;		
 	}
 
 	.section-box:hover {
@@ -541,10 +564,15 @@ footer.jumbotron .label-company {
 		transition: all 1s ease 0s;	
 	}	
 
-	.section-reason .section-content {
+	.fa-google-ads {
 
-		font-size: 15.2px;		
-	}	
+		width: 11%;
+	}
+
+	/*SECTION - SERVICE*/
+
+
+	/*SECTION - WHATSAPP*/
 
 	.btn-whatsapp {
 
@@ -556,6 +584,11 @@ footer.jumbotron .label-company {
 
 		font-size: 40px;
 	}		
+
+	/*SECTION - WHATSAPP*/
+
+
+	/*SECTION - CONTACT*/
 
 	.section-form .section-subtitle {
 
@@ -571,6 +604,17 @@ footer.jumbotron .label-company {
 
 		font-size: 20.5px;
 	}				
+
+	.font-warning {
+
+		font-size: 15px;
+		top: 65px;
+	}		
+
+	/*SECTION - CONTACT*/
+
+
+	/*SECTION - FOOTER*/
 
 	.jumbotron-title {
 
@@ -606,41 +650,35 @@ footer.jumbotron .label-company {
 		bottom: 4px;
 	}
 
-	.carousel-header .carousel-control-next {
+	/*SECTION - FOOTER*/
 
-		right: -100px;
-	}
 
-	.carousel-header .carousel-control-prev {
+	.section-form .section-title, .section-showoff .section-title {
 
-		left: -100px;
-	}			
-
-	.font-warning {
-
-		font-size: 15px;
-		top: 65px;
+		font-size: 40px;
 	}		
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	/*NAVBAR - COMPONENT*/
+
+	.nav-collapse {
+
+		left: -245px;
+	}
 
 	a.navbar-text:hover {
 
 		color: black;
 		border-bottom: #ffffff solid 0px;
 		cursor: none;
-	}	
-
-	.fa-google-ads {
-
-		width: 11%;
 	}
-}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/*NAVBAR - COMPONENT*/
 
-	.nav-collapse {
 
-		left: -245px;
-	}
+	/*CAROUSEL - SLIDE*/
 
 	.picture-slide-one, .picture-slide-two, .picture-slide-three {
 
@@ -662,6 +700,16 @@ footer.jumbotron .label-company {
 		font-size: 37px;
 	}
 
+	.carousel-header .carousel-caption {
+
+		height: 440px;
+	}	
+
+	/*CAROUSEL - SLIDE*/
+
+
+	/*SECTION - REASON*/
+
 	.section-reason .section-title {
 
 		font-size: 32px;
@@ -672,27 +720,21 @@ footer.jumbotron .label-company {
 		width: 400px;
 	}
 
+	/*SECTION - REASON*/
+
+
+	/*SECTION - SERVICE*/
+
 	.section-service .section-title {
 
 		font-size: 32px;
 	}	
-
-	.section-form .section-title, .section-showoff .section-title {
-
-		font-size: 33px;
-	}		
 
 	.section-box .section-content {
 
 		font-size: 11.1px;
 		top: 0px;
 		height: 145px;
-	}
-
-	.section-box, .animation-aos, .animate-aos {
-
-		height: 200px;
-		cursor: default;
 	}
 
 	.section-box:hover {
@@ -706,10 +748,10 @@ footer.jumbotron .label-company {
 		height: 55px;
 	}
 
-	.carousel-header .carousel-caption {
+	/*SECTION - SERVICE*/
 
-		height: 440px;
-	}	
+
+	/*SECTION - WHATSAPP*/
 
 	.btn-whatsapp {
 
@@ -720,7 +762,12 @@ footer.jumbotron .label-company {
 	.btn-whatsapp .fa-whatsapp {
 
 		font-size: 40px;
-	}	
+	}
+
+	/*SECTION - WHATSAPP*/
+
+
+	/*SECTION - CONTACT*/
 
 	.section-form .section-subtitle {
 
@@ -741,6 +788,22 @@ footer.jumbotron .label-company {
 
 		font-size: 20px;
 	}		
+
+	.alert-danger {
+
+		left: 18.5px;
+	}
+
+	.font-warning {
+
+		font-size: 13px;
+		top: 67px;
+	}
+
+	/*SECTION - CONTACT*/
+
+
+	/*SECTION - FOOTER*/
 
 	.jumbotron-title {
 
@@ -775,31 +838,34 @@ footer.jumbotron .label-company {
 		width: 45px;
 	}
 
-	.alert-danger {
+	/*SECTION - FOOTER*/	
 
-		left: 18.5px;
+
+	.section-form .section-title, .section-showoff .section-title {
+
+		font-size: 33px;
+	}		
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+	/*NAVBAR - COMPONENT*/
+
+	.nav-collapse {
+
+		left: -187px;
 	}
-
-	.font-warning {
-
-		font-size: 13px;
-		top: 67px;
-	}
-
 	a.navbar-text:hover {
 
 		color: black;
 		border-bottom: #ffffff solid 0px;
 		cursor: none;
 	}
-}
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+	/*NAVBAR - COMPONENT*/
 
-	.nav-collapse {
 
-		left: -187px;
-	}
+	/*CAROUSEL - SLIDE*/
 
 	.picture-slide-one, .picture-slide-two, .picture-slide-three {
 
@@ -821,22 +887,47 @@ footer.jumbotron .label-company {
 		font-size: 32px;
 	}
 
+	.carousel-header .carousel-caption {
+
+		height: 310px;
+	}
+
+	/*CAROUSEL - SLIDE*/
+
+
+	/*SECTION - REASON*/
+
 	.section-reason .section-title {
 
 		font-size: 27px;
 	}
 
-	.section-service .section-title {
+	.section-reason .section-subtitle {
 
 		font-size: 27px;
 	}
 
-	.section-form .section-title, .section-showoff .section-title {
+	.section-reason .section-content {
 
-		font-size: 28px;
-	}		
+		font-size: 14px;	
+	}	
 
-	.section-reason .section-subtitle {
+	.shadow-image {
+
+		margin: 0px auto;
+	}	
+
+	.section-reason .img-fluid {
+
+		width: 370px;
+	}	
+
+	/*SECTION - REASON*/
+
+
+	/*SECTION - SERVICE*/
+
+	.section-service .section-title {
 
 		font-size: 27px;
 	}
@@ -859,25 +950,21 @@ footer.jumbotron .label-company {
 		font-size: 12px;		
 	}	
 
-	.carousel-header .carousel-caption {
+	.section-box .rounded-left {
 
-		height: 310px;
+		width: 80px;
 	}
 
-	.section-reason .section-content {
+	.fa-google-ads {
 
-		font-size: 14px;	
-	}	
+		width: 45px;
+		height: 45px;
+	}
 
-	.shadow-image {
+	/*SECTION - SERVICE*/
 
-		margin: 0px auto;
-	}	
 
-	.section-reason .img-fluid {
-
-		width: 370px;
-	}	
+	/*SECTION - WHATSAPP*/
 
 	.btn-whatsapp {
 
@@ -889,6 +976,11 @@ footer.jumbotron .label-company {
 
 		font-size: 35px;
 	}
+
+	/*SECTION - WHATSAPP*/
+
+
+	/*SECTION - CONTACT*/
 
 	.section-form .section-subtitle {
 
@@ -908,7 +1000,19 @@ footer.jumbotron .label-company {
 	.section-form .btn {
 
 		font-size: 19.5px;
+	}
+
+	.font-warning {
+
+		position: relative;
+		font-size: 14.5px;
+		top: 8px;
 	}		
+
+	/*SECTION - CONTACT*/
+
+
+	/*SECTION - FOOTER*/
 
 	.jumbotron {
 
@@ -947,30 +1051,13 @@ footer.jumbotron .label-company {
 		bottom: 4px;
 	}
 
-	.font-warning {
+	/*SECTION - FOOTER*/	
 
-		position: relative;
-		font-size: 14.5px;
-		top: 8px;
+
+	.section-form .section-title, .section-showoff .section-title {
+
+		font-size: 28px;
 	}		
-
-	a.navbar-text:hover {
-
-		color: black;
-		border-bottom: #ffffff solid 0px;
-		cursor: none;
-	}
-
-	.section-box .rounded-left {
-
-		width: 80px;
-	}
-
-	.fa-google-ads {
-
-		width: 45px;
-		height: 45px;
-	}
 }
 
 @media only screen and (min-width: 0px) and (max-width: 575px) {
