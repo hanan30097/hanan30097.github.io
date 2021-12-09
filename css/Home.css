@@ -78,33 +78,18 @@ nav [src='css/logo_nadha.ico'] {
 	top: 78px;
 	z-index: 20;
 	overflow: hidden;
+	height: 565px;
 }
 
-.picture-slide-one, .picture-slide-two, .picture-slide-three {
+.video-slide-one, .video-slide-two, .video-slide-three {
 
-	background-size: cover;
-	height: 580px;
-}
-
-.picture-slide-one {
-
-	background-image: url('gambar-carousel-satu.jpg');
-}
-
-.picture-slide-two {
-
-	background-image: url('gambar-carousel-dua.jpg');
-}
-
-.picture-slide-three {
-
-	background-image: url('gambar-carousel-tiga.jpg');
+	width: 100%;
 }
 
 .picture-slide-gradient {
 
 	background-image: linear-gradient(to top, black, rgba(0,0,0,0.1));
-	height: 580px;
+	height: 100%;
 	position: absolute;
 	bottom: 0px;
 }
@@ -129,7 +114,9 @@ nav [src='css/logo_nadha.ico'] {
 
 .carousel-header .carousel-caption {
 
-	height: 545px;
+	height: 100%;
+	top: 0px;
+	position: absolute;
 }
 
 .carousel-header .label-company {
@@ -474,6 +461,11 @@ footer.jumbotron .label-company {
 
 	/*CAROUSEL - SLIDE*/
 
+	.carousel-header .carousel {
+
+		height: 555px;
+	}	
+
 	.carousel-header .carousel-control-prev, .carousel-header .carousel-control-next {
 
 		width: 100px;
@@ -656,10 +648,10 @@ footer.jumbotron .label-company {
 
 	/*CAROUSEL - SLIDE*/
 
-	.picture-slide-one, .picture-slide-two, .picture-slide-three {
+	.carousel-header .carousel {
 
-		height: 480px;
-	}
+		height: 430px;
+	}	
 
 	.carousel-header .carousel-control-prev, .carousel-header .carousel-control-next {
 
@@ -837,9 +829,9 @@ footer.jumbotron .label-company {
 
 	/*CAROUSEL - SLIDE*/
 
-	.picture-slide-one, .picture-slide-two, .picture-slide-three {
+	.carousel-header .carousel {
 
-		height: 350px;
+		height: 321px;
 	}
 
 	.carousel-header .carousel-control-prev, .carousel-header .carousel-control-next {
@@ -859,7 +851,7 @@ footer.jumbotron .label-company {
 
 	.carousel-header .carousel-caption {
 
-		height: 310px;
+		/*height: 316px;*/
 	}
 
 	/*CAROUSEL - SLIDE*/
@@ -1044,11 +1036,6 @@ footer.jumbotron .label-company {
 
 	/*CAROUSEL - SLIDE*/
 
-	.picture-slide-one, .picture-slide-two, .picture-slide-three {
-
-		height: 300px;
-	}	
-
 	.carousel-header .carousel-control-prev, .carousel-header .carousel-control-next {
 
 		width: 40px;
@@ -1056,7 +1043,7 @@ footer.jumbotron .label-company {
 
 	.carousel-header .carousel-caption {
 
-		height: 260px;
+		/*height: 252px;*/
 	}
 
 	.caption-carousel {
@@ -1067,6 +1054,16 @@ footer.jumbotron .label-company {
 	.carousel-header .label-company {
 
 		font-size: 24px;
+	}
+
+	.picture-slide-gradient {
+
+		/*bottom: 0px;*/
+	}
+
+	.carousel-header .carousel {
+
+		height: 252px;
 	}
 
 	/*CAROUSEL - SLIDE*/

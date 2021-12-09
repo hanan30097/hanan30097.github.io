@@ -76,7 +76,7 @@ nav [src='css/logo_nadha.ico'] {
 
 	height: 65px;
 	width: 65px;
-	z-index: 10;
+	/*z-index: 10;*/
 }
 
 .btn-whatsapp .fa-whatsapp {
