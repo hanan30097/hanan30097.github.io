@@ -847,7 +847,7 @@ function NAVBAR_BUTTON_SM (e) {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(950);
+                $("html").scrollTop(970);
             });                        
 
         } else {
@@ -856,7 +856,7 @@ function NAVBAR_BUTTON_SM (e) {
 
                 $(document).ready(function(){
 
-                    $("html").scrollTop(1950);
+                    $("html").scrollTop(1970);
                 });
             }
         }
@@ -906,7 +906,7 @@ function NAVBAR_BUTTON_SM (e) {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(950);
+                $("html").scrollTop(970);
             });                        
 
         } else {
@@ -915,7 +915,7 @@ function NAVBAR_BUTTON_SM (e) {
 
                 $(document).ready(function(){
 
-                    $("html").scrollTop(1950);
+                    $("html").scrollTop(1970);
                 });
             }
         }
