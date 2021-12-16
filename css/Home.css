@@ -57,7 +57,7 @@ a.navbar-text:hover {
 	z-index: 40; 
 	top: 71px;
 	left: 0px;
-	height: 1000px;
+	height: 100%;
 	background-color: gainsboro;
 	transition: all 1s ease 0s;
 }
@@ -78,7 +78,7 @@ nav [src='css/logo_nadha.ico'] {
 	top: 78px;
 	z-index: 20;
 	overflow: hidden;
-	height: 565px;
+	height: 578.5px;
 }
 
 .video-slide-one, .video-slide-two, .video-slide-three {
@@ -171,13 +171,17 @@ nav [src='css/logo_nadha.ico'] {
 .content-picture .img-fluid {
 
 	width: 450px;
+}
+
+.content-picture .picture-tilt {
+
 	transform: translate(0px,0px);
 	transition: all 1s ease 0s;
 }
 
-.content-picture .img-fluid:hover {
+.content-picture .picture-tilt:hover {
 
-	transform: translate(0,-15px);
+	transform: translate(0,-15px);	
 }
 
 .shadow-image {
@@ -509,7 +513,12 @@ footer.jumbotron .label-company {
 	.section-reason .section-content {
 
 		font-size: 15.2px;		
-	}	
+	}
+
+	.content-picture .img-fluid {
+
+		width: 425px;
+	}
 
 	/*SECTION - REASON*/
 
