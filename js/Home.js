@@ -958,16 +958,94 @@ var nav_button_sm=document.querySelectorAll(".nav-collapse .navbar-text");
       nav_button_sm[i].addEventListener("click",NAVBAR_BUTTON_SM);
   }
 
-// $(".navbar .karir").click(function(){
+if (location.search=="?services-lg") {
 
-//     $("html").scrollTop(1000);
-//     var posisi_gambar=$(".container .img-thumbnail").position();
-//     console.log(posisi_gambar);
-// });
+    nav_button_lg[1].setAttribute("style","color: #808080; border-bottom: #ffffff solid 1px;")
+    attribute_nav_prev=nav_button_lg[1];
+    boolean_nav_prev=nav_button_lg[1].hasAttribute("style");
 
-// $(".nav-collapse .karir").click(function(){
+        $(document).ready(function(){
 
-//     $("html").scrollTop(1000);
-//     var posisi_gambar=$(".container .img-thumbnail").position();
-//     console.log(posisi_gambar);
-// });
+            $("html").scrollTop(1115.5);
+        });
+
+} else if(location.search=="?project-lg") {
+
+    nav_button_lg[2].setAttribute("style","color: #808080; border-bottom: #ffffff solid 1px;")
+    attribute_nav_prev=nav_button_lg[2];
+    boolean_nav_prev=nav_button_lg[2].hasAttribute("style");
+
+        $(document).ready(function(){
+
+            $("html").scrollTop(1730.5);
+        });
+
+} else if (location.search=="?services-xs") {
+
+    nav_button_sm[1].setAttribute("style","color: darkred")
+    attribute_nav_prev=nav_button_sm[1];
+    boolean_nav_prev=nav_button_sm[1].hasAttribute("style");
+
+        $(document).ready(function(){
+
+            $("html").scrollTop(970);
+        });                   
+
+} else if (location.search=="?project-xs") {
+
+    nav_button_sm[2].setAttribute("style","color: darkred")
+    attribute_nav_prev=nav_button_sm[2];
+    boolean_nav_prev=nav_button_sm[2].hasAttribute("style");
+
+        $(document).ready(function(){
+
+            $("html").scrollTop(1970);
+        });
+
+} else if (location.search=="?services-md") {
+
+    nav_button_sm[7].setAttribute("style","color: darkred")
+    attribute_nav_prev=nav_button_sm[7];
+    boolean_nav_prev=nav_button_sm[7].hasAttribute("style");
+
+        $(document).ready(function(){
+
+            $("html").scrollTop(950);
+        });
+
+} else if (location.search=="?project-md") {
+
+    nav_button_sm[9].setAttribute("style","color: darkred")
+    attribute_nav_prev=nav_button_sm[9];
+    boolean_nav_prev=nav_button_sm[9].hasAttribute("style");
+
+        $(document).ready(function(){
+
+            $("html").scrollTop(1570);
+        });                
+
+} else if (location.search=="?services-sm") {
+
+    nav_button_sm[6].setAttribute("style","color: darkred")
+    attribute_nav_prev=nav_button_sm[6];
+    boolean_nav_prev=nav_button_sm[6].hasAttribute("style");
+
+        $(document).ready(function(){
+
+            $("html").scrollTop(1090);
+        });
+
+} else {
+
+    if (location.search=="?project-sm") {
+
+        nav_button_sm[8].setAttribute("style","color: darkred")
+        attribute_nav_prev=nav_button_sm[8];
+        boolean_nav_prev=nav_button_sm[8].hasAttribute("style");
+
+            $(document).ready(function(){
+
+                $("html").scrollTop(2210);
+            });               
+    }
+}
