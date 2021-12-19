@@ -448,15 +448,15 @@ function validation_form_xs (e) {
 
           col_alert.setAttribute("style","top: 15px; opacity: 1");
           col_alert.innerHTML=`\n<div class=\"${value_class}\">\n${error_1}\n${button_alert}\n</div>\n`;
-          input_email.focus();
-          input_email.setAttribute("class","form-control border-danger");
+          input_phone.focus();
+          input_phone.setAttribute("class","form-control border-danger");
 
       } else if (input_email.value=="") {
 
           col_alert.setAttribute("style","top: 15px; opacity: 1");
           col_alert.innerHTML=`\n<div class=\"${value_class}\">\n${error_1}\n${button_alert}\n</div>\n`;
-          input_phone.focus();
-          input_phone.setAttribute("class","form-control border-danger");
+          input_email.focus();
+          input_email.setAttribute("class","form-control border-danger");
 
       } else if (input_company.value=="") {
 
@@ -758,7 +758,7 @@ function NAVBAR_BUTTON_LG (e) {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(1115.5);
+                $("html").scrollTop(1115.5);               
             });
 
         } else {
@@ -800,8 +800,6 @@ function NAVBAR_BUTTON_LG (e) {
 }
 
 function NAVBAR_BUTTON_SM (e) {
-
-    // console.log($(".section-showoff .percobaan").offset());
 
     if(boolean_nav_prev==false) {
 

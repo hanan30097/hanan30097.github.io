@@ -37,18 +37,11 @@ a.navbar-text {
 	color: inherit;
 }
 
-a.navbar-text:hover {
+.navbar-nav .navbar-text:hover {
 
 	color: #808080;
 	border-bottom: #ffffff solid 1px;
 	cursor: pointer;
-}
-
-.nav-collapse .navbar-text:hover {
-
-	color: darkred;
-	border-bottom: #ffffff solid 0px;
-	cursor: none;
 }
 
 .nav-collapse {
@@ -57,7 +50,7 @@ a.navbar-text:hover {
 	z-index: 40; 
 	top: 71px;
 	left: 0px;
-	height: 1000px;
+	height: 100%;
 	background-color: gainsboro;
 	transition: all 1s ease 0s;
 }
