@@ -19,8 +19,19 @@ function NavCollapse () {
 var Navbar_Toggler=document.querySelector('button.navbar-toggler');
 Navbar_Toggler.addEventListener("click",NavCollapse);
 
-// console.log(location.hash);
+$(document).ready(function() {
 
+    $(".btn").click(function(){
+
+        // $(".percobaan").slideToggle("slow");
+        $(".percobaan").animate({
+
+            // width:"70%",
+            width:"80%"
+
+        },1000,"easeOutBounce");
+    });
+});
 
 
 

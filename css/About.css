@@ -22,6 +22,12 @@ html {
 	scroll-behavior: smooth;
 }
 
+.percobaan {
+
+	width: 50%;
+	height: 400px;
+}
+
 /*NAVBAR - COMPONENT*/
 
 nav .label-company {

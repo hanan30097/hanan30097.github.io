@@ -758,7 +758,9 @@ function NAVBAR_BUTTON_LG (e) {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(1115.5);               
+                $("html").animate({scrollTop: 1115.5},500,"easeOutBounce");
+
+                // $("html").scrollTop(1115.5);               
             });
 
         } else {
@@ -767,7 +769,8 @@ function NAVBAR_BUTTON_LG (e) {
 
                 $(document).ready(function(){
 
-                    $("html").scrollTop(1730.5);
+                    // $("html").scrollTop(1730.5);
+                    $("html").animate({scrollTop: 1730.5},500,"easeOutBounce");
                 });                
             }
         }
@@ -783,7 +786,9 @@ function NAVBAR_BUTTON_LG (e) {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(1115.5);
+                $("html").animate({scrollTop: 1115.5},"easeOutBounce");
+
+                // $("html").scrollTop(1115.5);
             });
 
         } else {
@@ -792,7 +797,8 @@ function NAVBAR_BUTTON_LG (e) {
 
                 $(document).ready(function(){
 
-                    $("html").scrollTop(1730.5);
+                    // $("html").scrollTop(1730.5);
+                    $("html").animate({scrollTop: 1730.5},500,"easeOutBounce");
                 });                
             }
         }
@@ -811,35 +817,40 @@ function NAVBAR_BUTTON_SM (e) {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(950);
+                // $("html").scrollTop(950);
+                $("html").animate({scrollTop: 950},500,"easeOutBounce");
             });
 
         } else if (e.target.id=="menu-project-md") {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(1570);
+                // $("html").scrollTop(1570);
+                $("html").animate({scrollTop: 1570},500,"easeOutBounce");
             });            
 
         } else if (e.target.id=="menu-service-sm") {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(1090);
+                // $("html").scrollTop(1090);
+                $("html").animate({scrollTop: 1090},500,"easeOutBounce");
             });            
 
         } else if (e.target.id=="menu-project-sm") {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(2210);
+                // $("html").scrollTop(2210);
+                $("html").animate({scrollTop: 2210},500,"easeOutBounce");
             });                        
 
         } else if (e.target.id=="menu-service-xs") {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(970);
+                // $("html").scrollTop(970);
+                $("html").animate({scrollTop: 970},500,"easeOutBounce");
             });                        
 
         } else {
@@ -848,7 +859,8 @@ function NAVBAR_BUTTON_SM (e) {
 
                 $(document).ready(function(){
 
-                    $("html").scrollTop(1970);
+                    // $("html").scrollTop(1970);
+                    $("html").animate({scrollTop: 1970},500,"easeOutBounce");
                 });
             }
         }
@@ -864,35 +876,40 @@ function NAVBAR_BUTTON_SM (e) {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(950);
+                // $("html").scrollTop(950);
+                $("html").animate({scrollTop: 950},500,"easeOutBounce");
             });
 
         } else if (e.target.id=="menu-project-md") {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(1570);
+                // $("html").scrollTop(1570);
+                $("html").animate({scrollTop: 1570},500,"easeOutBounce");
             });            
 
         } else if (e.target.id=="menu-service-sm") {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(1090);
+                // $("html").scrollTop(1090);
+                $("html").animate({scrollTop: 1090},500,"easeOutBounce");
             });            
 
         } else if (e.target.id=="menu-project-sm") {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(2210);
+                // $("html").scrollTop(2210);
+                $("html").animate({scrollTop: 2210},500,"easeOutBounce");
             });                        
 
         } else if (e.target.id=="menu-service-xs") {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(970);
+                // $("html").scrollTop(970);
+                $("html").animate({scrollTop: 970},500,"easeOutBounce");
             });                        
 
         } else {
@@ -901,7 +918,8 @@ function NAVBAR_BUTTON_SM (e) {
 
                 $(document).ready(function(){
 
-                    $("html").scrollTop(1970);
+                    // $("html").scrollTop(1970);
+                    $("html").animate({scrollTop: 1970},500,"easeOutBounce");
                 });
             }
         }
