@@ -758,7 +758,7 @@ function NAVBAR_BUTTON_LG (e) {
 
             $(document).ready(function(){
 
-                $("html").animate({scrollTop: 1115.5},500,"easeOutBounce");
+                $("html").animate({scrollTop: 1115.5},700,"easeInCirc");
 
                 // $("html").scrollTop(1115.5);               
             });
@@ -770,7 +770,7 @@ function NAVBAR_BUTTON_LG (e) {
                 $(document).ready(function(){
 
                     // $("html").scrollTop(1730.5);
-                    $("html").animate({scrollTop: 1730.5},500,"easeOutBounce");
+                    $("html").animate({scrollTop: 1730.5},700,"easeInCirc");
                 });                
             }
         }
@@ -786,7 +786,7 @@ function NAVBAR_BUTTON_LG (e) {
 
             $(document).ready(function(){
 
-                $("html").animate({scrollTop: 1115.5},"easeOutBounce");
+                $("html").animate({scrollTop: 1115.5},700,"easeInCirc");
 
                 // $("html").scrollTop(1115.5);
             });
@@ -798,7 +798,7 @@ function NAVBAR_BUTTON_LG (e) {
                 $(document).ready(function(){
 
                     // $("html").scrollTop(1730.5);
-                    $("html").animate({scrollTop: 1730.5},500,"easeOutBounce");
+                    $("html").animate({scrollTop: 1730.5},700,"easeInCirc");
                 });                
             }
         }
@@ -818,7 +818,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(950);
-                $("html").animate({scrollTop: 950},500,"easeOutBounce");
+                $("html").animate({scrollTop: 950},700,"easeInCirc");
             });
 
         } else if (e.target.id=="menu-project-md") {
@@ -826,7 +826,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(1570);
-                $("html").animate({scrollTop: 1570},500,"easeOutBounce");
+                $("html").animate({scrollTop: 1570},700,"easeInCirc");
             });            
 
         } else if (e.target.id=="menu-service-sm") {
@@ -834,7 +834,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(1090);
-                $("html").animate({scrollTop: 1090},500,"easeOutBounce");
+                $("html").animate({scrollTop: 1090},700,"easeInCirc");
             });            
 
         } else if (e.target.id=="menu-project-sm") {
@@ -842,7 +842,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(2210);
-                $("html").animate({scrollTop: 2210},500,"easeOutBounce");
+                $("html").animate({scrollTop: 2210},700,"easeInCirc");
             });                        
 
         } else if (e.target.id=="menu-service-xs") {
@@ -850,7 +850,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(970);
-                $("html").animate({scrollTop: 970},500,"easeOutBounce");
+                $("html").animate({scrollTop: 970},700,"easeInCirc");
             });                        
 
         } else {
@@ -860,7 +860,7 @@ function NAVBAR_BUTTON_SM (e) {
                 $(document).ready(function(){
 
                     // $("html").scrollTop(1970);
-                    $("html").animate({scrollTop: 1970},500,"easeOutBounce");
+                    $("html").animate({scrollTop: 1970},700,"easeInCirc");
                 });
             }
         }
@@ -877,7 +877,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(950);
-                $("html").animate({scrollTop: 950},500,"easeOutBounce");
+                $("html").animate({scrollTop: 950},700,"easeInCirc");
             });
 
         } else if (e.target.id=="menu-project-md") {
@@ -885,7 +885,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(1570);
-                $("html").animate({scrollTop: 1570},500,"easeOutBounce");
+                $("html").animate({scrollTop: 1570},700,"easeInCirc");
             });            
 
         } else if (e.target.id=="menu-service-sm") {
@@ -893,7 +893,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(1090);
-                $("html").animate({scrollTop: 1090},500,"easeOutBounce");
+                $("html").animate({scrollTop: 1090},700,"easeInCirc");
             });            
 
         } else if (e.target.id=="menu-project-sm") {
@@ -901,7 +901,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(2210);
-                $("html").animate({scrollTop: 2210},500,"easeOutBounce");
+                $("html").animate({scrollTop: 2210},700,"easeInCirc");
             });                        
 
         } else if (e.target.id=="menu-service-xs") {
@@ -909,7 +909,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(970);
-                $("html").animate({scrollTop: 970},500,"easeOutBounce");
+                $("html").animate({scrollTop: 970},700,"easeInCirc");
             });                        
 
         } else {
@@ -919,7 +919,7 @@ function NAVBAR_BUTTON_SM (e) {
                 $(document).ready(function(){
 
                     // $("html").scrollTop(1970);
-                    $("html").animate({scrollTop: 1970},500,"easeOutBounce");
+                    $("html").animate({scrollTop: 1970},700,"easeInCirc");
                 });
             }
         }

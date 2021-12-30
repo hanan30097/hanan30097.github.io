@@ -21,15 +21,19 @@ Navbar_Toggler.addEventListener("click",NavCollapse);
 
 $(document).ready(function() {
 
-    $(".btn").click(function(){
+    // $(".btn").click(function(){
 
-        // $(".percobaan").slideToggle("slow");
-        $(".percobaan").animate({
+    //     // $(".percobaan").slideToggle("slow");
+    //     $(".percobaan").animate({
 
-            // width:"70%",
-            width:"80%"
+    //         // width:"70%",
+    //         width:"toggle"
 
-        },1000,"easeOutBounce");
+    //     },1000,"easeOutBounce");
+    // });
+    $(".btn").on("click",function(){
+
+        $(".percobaan").fadeToggle(1000);
     });
 });
 
