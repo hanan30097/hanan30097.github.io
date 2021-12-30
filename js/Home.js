@@ -818,7 +818,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(950);
-                $("html").animate({scrollTop: 950},700,"easeInCirc");
+                $("html").animate({scrollTop: 950},1000);
             });
 
         } else if (e.target.id=="menu-project-md") {
@@ -826,7 +826,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(1570);
-                $("html").animate({scrollTop: 1570},700,"easeInCirc");
+                $("html").animate({scrollTop: 1570},1000);
             });            
 
         } else if (e.target.id=="menu-service-sm") {
@@ -834,7 +834,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(1090);
-                $("html").animate({scrollTop: 1090},700,"easeInCirc");
+                $("html").animate({scrollTop: 1090},1000);
             });            
 
         } else if (e.target.id=="menu-project-sm") {
@@ -842,7 +842,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(2210);
-                $("html").animate({scrollTop: 2210},700,"easeInCirc");
+                $("html").animate({scrollTop: 2210},1000);
             });                        
 
         } else if (e.target.id=="menu-service-xs") {
@@ -850,7 +850,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(970);
-                $("html").animate({scrollTop: 970},700,"easeInCirc");
+                $("html").animate({scrollTop: 970},1000);
             });                        
 
         } else {
@@ -860,7 +860,7 @@ function NAVBAR_BUTTON_SM (e) {
                 $(document).ready(function(){
 
                     // $("html").scrollTop(1970);
-                    $("html").animate({scrollTop: 1970},700,"easeInCirc");
+                    $("html").animate({scrollTop: 1970},1000);
                 });
             }
         }
@@ -877,7 +877,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(950);
-                $("html").animate({scrollTop: 950},700,"easeInCirc");
+                $("html").animate({scrollTop: 950},1000);
             });
 
         } else if (e.target.id=="menu-project-md") {
@@ -885,7 +885,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(1570);
-                $("html").animate({scrollTop: 1570},700,"easeInCirc");
+                $("html").animate({scrollTop: 1570},1000);
             });            
 
         } else if (e.target.id=="menu-service-sm") {
@@ -893,7 +893,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(1090);
-                $("html").animate({scrollTop: 1090},700,"easeInCirc");
+                $("html").animate({scrollTop: 1090},1000);
             });            
 
         } else if (e.target.id=="menu-project-sm") {
@@ -901,7 +901,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(2210);
-                $("html").animate({scrollTop: 2210},700,"easeInCirc");
+                $("html").animate({scrollTop: 2210},1000);
             });                        
 
         } else if (e.target.id=="menu-service-xs") {
@@ -909,7 +909,7 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(970);
-                $("html").animate({scrollTop: 970},700,"easeInCirc");
+                $("html").animate({scrollTop: 970},1000);
             });                        
 
         } else {
@@ -919,12 +919,22 @@ function NAVBAR_BUTTON_SM (e) {
                 $(document).ready(function(){
 
                     // $("html").scrollTop(1970);
-                    $("html").animate({scrollTop: 1970},700,"easeInCirc");
+                    $("html").animate({scrollTop: 1970},1000);
                 });
             }
         }
     }  
 }
+
+$(document).ready(function(){
+
+    var nilai=0;
+
+    $(window).scroll(function(){
+
+        console.log(nilai++)
+    });
+});
 
 var Navbar_Toggler=document.querySelector('button.navbar-toggler');
 Navbar_Toggler.addEventListener("click",NavCollapse);
