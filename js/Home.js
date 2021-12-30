@@ -851,7 +851,8 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(970);
-                $("html").animate({scrollTop: 970},1000,"jswing");
+                // $("html").animate({scrollTop: 970},1000,"jswing");
+                $("html").animate({scrollTop: 970},1000);
             });                        
 
         } else {
@@ -861,7 +862,8 @@ function NAVBAR_BUTTON_SM (e) {
                 $(document).ready(function(){
 
                     // $("html").scrollTop(1970);
-                    $("html").animate({scrollTop: 1970},1000,"jswing");
+                    // $("html").animate({scrollTop: 1970},1000,"jswing");
+                    $("html").animate({scrollTop: 1970},1000);
                 });
             }
         }
@@ -910,7 +912,8 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 // $("html").scrollTop(970);
-                $("html").animate({scrollTop: 970},1000,"jswing");
+                // $("html").animate({scrollTop: 970},1000,"jswing");
+                $("html").animate({scrollTop: 970},1000);
             });                        
 
         } else {
@@ -920,7 +923,8 @@ function NAVBAR_BUTTON_SM (e) {
                 $(document).ready(function(){
 
                     // $("html").scrollTop(1970);
-                    $("html").animate({scrollTop: 1970},1000,"jswing");
+                    // $("html").animate({scrollTop: 1970},1000,"jswing");
+                    $("html").animate({scrollTop: 1970},1000);
                 });
             }
         }
