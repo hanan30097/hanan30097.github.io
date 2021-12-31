@@ -759,9 +759,7 @@ function NAVBAR_BUTTON_LG (e) {
 
             $(document).ready(function(){
 
-                $("html").animate({scrollTop: 1115.5},1000,"jswing");
-
-                // $("html").scrollTop(1115.5);               
+                $("html").animate({scrollTop: 1115.5},1000,"jswing");              
             });
 
         } else {
@@ -770,7 +768,6 @@ function NAVBAR_BUTTON_LG (e) {
 
                 $(document).ready(function(){
 
-                    // $("html").scrollTop(1730.5);
                     $("html").animate({scrollTop: 1730.5},1000,"jswing");
                 });                
             }
@@ -788,8 +785,6 @@ function NAVBAR_BUTTON_LG (e) {
             $(document).ready(function(){
 
                 $("html").animate({scrollTop: 1115.5},1000,"jswing");
-
-                // $("html").scrollTop(1115.5);
             });
 
         } else {
@@ -798,7 +793,6 @@ function NAVBAR_BUTTON_LG (e) {
 
                 $(document).ready(function(){
 
-                    // $("html").scrollTop(1730.5);
                     $("html").animate({scrollTop: 1730.5},1000,"jswing");
                 });                
             }
@@ -850,7 +844,7 @@ function NAVBAR_BUTTON_SM (e) {
 
             $(document).ready(function(){
 
-                $("html").animate({scrollTop: 970},1000);
+                $("html").scrollTop(970);
             });                        
 
         } else {
@@ -859,7 +853,7 @@ function NAVBAR_BUTTON_SM (e) {
 
                 $(document).ready(function(){
 
-                    $("html").animate({scrollTop: 1970},1000);
+                    $("html").scrollTop(1970);
                 });
             }
         }
@@ -979,7 +973,6 @@ if (location.search=="?services-lg") {
 
         $(document).ready(function(){
 
-            // $("html").scrollTop(1115.5);
             $("html").animate({scrollTop: 1115.5},1000,"jswing");
         });
 
@@ -991,7 +984,6 @@ if (location.search=="?services-lg") {
 
         $(document).ready(function(){
 
-            // $("html").scrollTop(1730.5);
             $("html").animate({scrollTop: 1730.5},1000,"jswing");
         });
 
