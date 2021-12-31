@@ -850,8 +850,6 @@ function NAVBAR_BUTTON_SM (e) {
 
             $(document).ready(function(){
 
-                // $("html").scrollTop(970);
-                // $("html").animate({scrollTop: 970},1000,"jswing");
                 $("html").animate({scrollTop: 970},1000);
             });                        
 
@@ -861,8 +859,6 @@ function NAVBAR_BUTTON_SM (e) {
 
                 $(document).ready(function(){
 
-                    // $("html").scrollTop(1970);
-                    // $("html").animate({scrollTop: 1970},1000,"jswing");
                     $("html").animate({scrollTop: 1970},1000);
                 });
             }
@@ -911,9 +907,7 @@ function NAVBAR_BUTTON_SM (e) {
 
             $(document).ready(function(){
 
-                // $("html").scrollTop(970);
-                // $("html").animate({scrollTop: 970},1000,"jswing");
-                $("html").animate({scrollTop: 970},1000);
+                $("html").scrollTop(970);
             });                        
 
         } else {
@@ -922,9 +916,7 @@ function NAVBAR_BUTTON_SM (e) {
 
                 $(document).ready(function(){
 
-                    // $("html").scrollTop(1970);
-                    // $("html").animate({scrollTop: 1970},1000,"jswing");
-                    $("html").animate({scrollTop: 1970},1000);
+                    $("html").scrollTop(1970);
                 });
             }
         }
@@ -987,7 +979,8 @@ if (location.search=="?services-lg") {
 
         $(document).ready(function(){
 
-            $("html").scrollTop(1115.5);
+            // $("html").scrollTop(1115.5);
+            $("html").animate({scrollTop: 1115.5},1000,"jswing");
         });
 
 } else if(location.search=="?project-lg") {
@@ -998,7 +991,8 @@ if (location.search=="?services-lg") {
 
         $(document).ready(function(){
 
-            $("html").scrollTop(1730.5);
+            // $("html").scrollTop(1730.5);
+            $("html").animate({scrollTop: 1730.5},1000,"jswing");
         });
 
 } else if (location.search=="?services-xs") {
