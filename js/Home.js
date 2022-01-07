@@ -157,6 +157,8 @@ var shadow_img_lg=document.getElementById("nav-service");
   var browser_name=((navigator.userAgent.split("/"))[2].split(" "))[1];
 var attribute_nav_prev;
 
+// console.log(browser_name);
+
 function NavCollapse () {
 
     for (var i=0; i<2; i++) {
@@ -756,7 +758,7 @@ function NAVBAR_BUTTON_LG (e) {
         attribute_nav_prev=e.target;
         boolean_nav_prev=e.target.hasAttribute("style");
 
-        if(browser_name=="firefox") {
+        if(browser_name=="Firefox") {
 
             if (e.target.innerHTML=="Services") {
 
@@ -804,7 +806,7 @@ function NAVBAR_BUTTON_LG (e) {
         attribute_nav_prev=e.target;
         boolean_nav_prev=e.target.hasAttribute("style");
 
-        if(browser_name=="firefox") {
+        if(browser_name=="Firefox") {
 
             if (e.target.innerHTML=="Services") {
 
