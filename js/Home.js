@@ -154,6 +154,7 @@ var warning_company=document.querySelectorAll(".form-group .warning-company");
 
 var shadow_img_lg=document.getElementById("nav-service");
   var boolean_nav_prev=false;
+  var browser_name=((navigator.userAgent.split("/"))[2].split(" "))[1];
 var attribute_nav_prev;
 
 function NavCollapse () {
@@ -755,21 +756,44 @@ function NAVBAR_BUTTON_LG (e) {
         attribute_nav_prev=e.target;
         boolean_nav_prev=e.target.hasAttribute("style");
 
-        if (e.target.innerHTML=="Services") {
+        if(browser_name=="firefox") {
 
-            $(document).ready(function(){
-
-                $("html").animate({scrollTop: 1115.5},1000,"jswing");              
-            });
-
-        } else {
-
-            if(e.target.innerHTML=="Project") {
+            if (e.target.innerHTML=="Services") {
 
                 $(document).ready(function(){
 
-                    $("html").animate({scrollTop: 1730.5},1000,"jswing");
-                });                
+                    $("html").animate({scrollTop: 1115.5},1000,"jswing");              
+                });
+
+            } else {
+
+                if(e.target.innerHTML=="Project") {
+
+                    $(document).ready(function(){
+
+                        $("html").animate({scrollTop: 1730.5},1000,"jswing");
+                    });                
+                }
+            }
+
+        } else {
+
+            if (e.target.innerHTML=="Services") {
+
+                $(document).ready(function(){
+
+                    $("html").animate({scrollTop: 1115.5});
+                });
+
+            } else {
+
+                if(e.target.innerHTML=="Project") {
+
+                    $(document).ready(function(){
+
+                        $("html").animate({scrollTop: 1730.5});
+                    });                
+                }
             }
         }
 
@@ -780,22 +804,45 @@ function NAVBAR_BUTTON_LG (e) {
         attribute_nav_prev=e.target;
         boolean_nav_prev=e.target.hasAttribute("style");
 
-        if (e.target.innerHTML=="Services") {
+        if(browser_name=="firefox") {
 
-            $(document).ready(function(){
-
-                $("html").animate({scrollTop: 1115.5},1000,"jswing");
-            });
-
-        } else {
-
-            if(e.target.innerHTML=="Project") {
+            if (e.target.innerHTML=="Services") {
 
                 $(document).ready(function(){
 
-                    $("html").animate({scrollTop: 1730.5},1000,"jswing");
-                });                
+                    $("html").animate({scrollTop: 1115.5},1000,"jswing");
+                });
+
+            } else {
+
+                if(e.target.innerHTML=="Project") {
+
+                    $(document).ready(function(){
+
+                        $("html").animate({scrollTop: 1730.5},1000,"jswing");
+                    });                
+                }
             }
+
+        } else {
+
+            if (e.target.innerHTML=="Services") {
+
+                $(document).ready(function(){
+
+                    $("html").animate({scrollTop: 1115.5});
+                });
+
+            } else {
+
+                if(e.target.innerHTML=="Project") {
+
+                    $(document).ready(function(){
+
+                        $("html").animate({scrollTop: 1730.5});
+                    });                
+                }
+            }            
         }
     }  
 }
