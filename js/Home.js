@@ -762,16 +762,23 @@ function NAVBAR_BUTTON_LG (e) {
 
             if (e.target.innerHTML=="Services") {
 
-                $(document).ready(function(){
+                $(document).ready(function() {
 
                     $("html").animate({scrollTop: 1115.5},1000,"jswing");              
                 });
+
+            } else if(e.target.innerHTML=="Contact Us") {
+
+                  $(document).ready(function() {
+
+                        $("html").animate({scrollTop: 2095},1000,"jswing");
+                    });                
 
             } else {
 
                 if(e.target.innerHTML=="Project") {
 
-                    $(document).ready(function(){
+                    $(document).ready(function() {
 
                         $("html").animate({scrollTop: 1730.5},1000,"jswing");
                     });                
@@ -782,16 +789,23 @@ function NAVBAR_BUTTON_LG (e) {
 
             if (e.target.innerHTML=="Services") {
 
-                $(document).ready(function(){
+                $(document).ready(function() {
 
                     $("html").animate({scrollTop: 1115.5});
                 });
+
+            } else if(e.target.innerHTML=="Contact Us") {
+
+                  $(document).ready(function() {
+
+                        $("html").animate({scrollTop: 2095});
+                    });                
 
             } else {
 
                 if(e.target.innerHTML=="Project") {
 
-                    $(document).ready(function(){
+                    $(document).ready(function() {
 
                         $("html").animate({scrollTop: 1730.5});
                     });                
@@ -815,6 +829,13 @@ function NAVBAR_BUTTON_LG (e) {
                     $("html").animate({scrollTop: 1115.5},1000,"jswing");
                 });
 
+            } else if(e.target.innerHTML=="Contact Us") {
+
+                  $(document).ready(function() {
+
+                        $("html").animate({scrollTop: 2095},1000,"jswing");
+                    });                   
+
             } else {
 
                 if(e.target.innerHTML=="Project") {
@@ -834,6 +855,13 @@ function NAVBAR_BUTTON_LG (e) {
 
                     $("html").animate({scrollTop: 1115.5});
                 });
+
+            } else if(e.target.innerHTML=="Contact Us") {
+
+                  $(document).ready(function() {
+
+                        $("html").animate({scrollTop: 2095});
+                    });                
 
             } else {
 
@@ -892,6 +920,13 @@ function NAVBAR_BUTTON_SM (e) {
                 $("html").scrollTop(970);
             });                        
 
+        } else if (e.target.id=="menu-contact-xs") {
+
+            $(document).ready(function(){
+
+                $("html").scrollTop(2420.5);
+            });                                    
+
         } else {
 
             if(e.target.id=="menu-project-xs") {
@@ -943,7 +978,14 @@ function NAVBAR_BUTTON_SM (e) {
             $(document).ready(function(){
 
                 $("html").scrollTop(970);
-            });                        
+            });
+
+        } else if (e.target.id=="menu-contact-xs") {
+
+            $(document).ready(function(){
+
+                $("html").scrollTop(2420.5);
+            });                                    
 
         } else {
 
