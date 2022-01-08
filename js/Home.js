@@ -924,7 +924,7 @@ function NAVBAR_BUTTON_SM (e) {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(2420.5);
+                $("html").scrollTop(2430.5);
             });                                    
 
         } else {
@@ -984,7 +984,7 @@ function NAVBAR_BUTTON_SM (e) {
 
             $(document).ready(function(){
 
-                $("html").scrollTop(2420.5);
+                $("html").scrollTop(2430.5);
             });                                    
 
         } else {
