@@ -13,8 +13,6 @@ var FadeRight500=2;
 
 var fade_down=document.querySelectorAll(".fade-down");
 
-// console.log(fade_down);
-
   for(var i=0; i<FadeDown; i++) {
 
     fade_down[i].dataset.aos="fade-down";
@@ -22,8 +20,6 @@ var fade_down=document.querySelectorAll(".fade-down");
   }
 
 var fade_down_1000=document.querySelectorAll(".fade-down-1000");
-
-// console.log(fade_down_1000);
 
   for(var i=0; i<FadeDown1000; i++) {
 
@@ -34,8 +30,6 @@ var fade_down_1000=document.querySelectorAll(".fade-down-1000");
 
 var fade_down_500=document.querySelectorAll(".fade-down-500");
 
-// console.log(fade_down_500);
-
   for(var i=0; i<FadeDown500; i++) {
 
     fade_down_500[i].dataset.aos="fade-down"
@@ -45,8 +39,6 @@ var fade_down_500=document.querySelectorAll(".fade-down-500");
   
 var fade_up=document.querySelectorAll(".fade-up");
 
-// console.log(fade_down);
-
   for(var i=0; i<FadeUp; i++) {
 
     fade_up[i].dataset.aos="fade-up"
@@ -54,8 +46,6 @@ var fade_up=document.querySelectorAll(".fade-up");
   } 
 
 var flip_right_500=document.querySelectorAll(".flip-right-500");
-
-// console.log(flip_right_500);
 
   for(var i=0; i<FlipRight500; i++) {
 
@@ -66,8 +56,6 @@ var flip_right_500=document.querySelectorAll(".flip-right-500");
 
 var fade_up_500=document.querySelectorAll(".fade-up-500");
 
-// console.log(fade_up_500);
-
   for(var i=0; i<FadeUp500; i++) {
 
     fade_up_500[i].dataset.aos="fade-up"
@@ -76,8 +64,6 @@ var fade_up_500=document.querySelectorAll(".fade-up-500");
   }
 
 var flip_left_1000=document.querySelectorAll(".flip-left-1000");
-
-// console.log(flip_left_1000);
 
   for(var i=0; i<FlipLeft1000; i++) {
 
@@ -88,8 +74,6 @@ var flip_left_1000=document.querySelectorAll(".flip-left-1000");
 
 var fade_right_1000=document.querySelectorAll(".fade-right-1000");
 
-// console.log(fade_right_1000);
-
   for(var i=0; i<FadeRight1000; i++) {
 
     fade_right_1000[i].dataset.aos="fade-right"
@@ -98,8 +82,6 @@ var fade_right_1000=document.querySelectorAll(".fade-right-1000");
   }
 
 var fade_right_500=document.querySelectorAll(".fade-right-500");
-
-// console.log(fade_right_500);
 
   for(var i=0; i<FadeRight500; i++) {
 
@@ -110,8 +92,6 @@ var fade_right_500=document.querySelectorAll(".fade-right-500");
 
 var zoom_in_1000=document.querySelectorAll(".zoom-in-1000");
 
-// console.log(zoom_in_1000);
-
   for(var i=0; i<ZoomIn1000; i++) {
 
     zoom_in_1000[i].dataset.aos="zoom-in"
@@ -120,8 +100,6 @@ var zoom_in_1000=document.querySelectorAll(".zoom-in-1000");
   }
 
 var zoom_in_500=document.querySelectorAll(".zoom-in-500");
-
-// console.log(zoom_in_500);
 
   for(var i=0; i<ZoomIn500; i++) {
 
@@ -137,11 +115,12 @@ var col_alert=document.querySelector(".alert-attention .col-12");
 
 var input_name,input_email,input_phone,input_company,input_budget,input_problem,form_company,form_register;
 var array_name,array_email,array_phone,array_company,array_budget,form_name,form_email,form_phone;
+var line_menu_click,name_menu,line_services=false,line_project=false,line_contact_us=false;
 
 var value_class="alert alert-danger text-center alert-dismissible fade show";
   var error_1="Pastikan anda telah mengisi semua";
     var error_2="Pastikan data telah terisi dengan benar";
-// var delimiter_line=document.querySelectorAll(".section-service .delimiter-line");
+  var delimiter_line=document.querySelectorAll(".section-service .delimiter-line");
 
 var alpha_numeric_1=["0","1","2","3","4","5","6","7","8","9"];
 var alpha_numeric_2=["\"","\'","<",">",",","?","/","~","`","!","#","$","%","^","&","*","(",")","_","-","+","=","{","}","[","]","\\","|",":",";"];
@@ -155,9 +134,8 @@ var warning_company=document.querySelectorAll(".form-group .warning-company");
 var shadow_img_lg=document.getElementById("nav-service");
   var boolean_nav_prev=false;
   var browser_name=((navigator.userAgent.split("/"))[2].split(" "))[1];
+  var line_menu=document.querySelectorAll(".navbar-text .line-navbar-menu");
 var attribute_nav_prev;
-
-// console.log(browser_name);
 
 function NavCollapse () {
 
@@ -750,65 +728,65 @@ function IMG_REASON_OVER (e) {
     VanillaTilt.init(e.target,{max: 25,speed: 300});
 }
 
-function NAVBAR_BUTTON_LG (e) {
+function NAVBAR_LG_CLICK (e) {
 
     if(boolean_nav_prev==false) {
 
-        e.target.setAttribute("style","color: #808080; border-bottom: #ffffff solid 1px;");
+        e.target.setAttribute("style","color: #808080");
         attribute_nav_prev=e.target;
         boolean_nav_prev=e.target.hasAttribute("style");
 
         if(browser_name=="Firefox") {
 
-            if (e.target.innerHTML=="Services") {
+            if (name_menu=="Services") {
 
-                $(document).ready(function() {
+                $(document).ready(function() { $("html").animate({scrollTop: 1115.5},1000,"jswing"); });
+                line_menu_click=line_menu[1];
+                line_menu[1].classList.add("active");
+                line_services=line_menu[1].classList.contains("active");
 
-                    $("html").animate({scrollTop: 1115.5},1000,"jswing");              
-                });
+            } else if(name_menu=="Contact Us") {
 
-            } else if(e.target.innerHTML=="Contact Us") {
-
-                  $(document).ready(function() {
-
-                        $("html").animate({scrollTop: 2095},1000,"jswing");
-                    });                
+                $(document).ready(function() { $("html").animate({scrollTop: 2095},1000,"jswing"); });                
+                line_menu_click=line_menu[4];
+                line_menu[4].classList.add("active");
+                line_contact_us=line_menu[4].classList.contains("active");                
 
             } else {
 
-                if(e.target.innerHTML=="Project") {
+                if(name_menu=="Project") {
 
-                    $(document).ready(function() {
-
-                        $("html").animate({scrollTop: 1730.5},1000,"jswing");
-                    });                
+                    $(document).ready(function() { $("html").animate({scrollTop: 1730.5},1000,"jswing"); });                
+                    line_menu_click=line_menu[2];
+                    line_menu[2].classList.add("active");
+                    line_project=line_menu[2].classList.contains("active");
                 }
             }
 
         } else {
 
-            if (e.target.innerHTML=="Services") {
+            if (name_menu=="Services") {
 
-                $(document).ready(function() {
+                $(document).ready(function() { $("html").animate({scrollTop: 1115.5}); });
+                line_menu_click=line_menu[1];
+                line_menu[1].classList.add("active");
+                line_services=line_menu[1].classList.contains("active");
 
-                    $("html").animate({scrollTop: 1115.5});
-                });
+            } else if(name_menu=="Contact Us") {
 
-            } else if(e.target.innerHTML=="Contact Us") {
-
-                  $(document).ready(function() {
-
-                        $("html").animate({scrollTop: 2095});
-                    });                
+                $(document).ready(function() { $("html").animate({scrollTop: 2095}); });                
+                line_menu_click=line_menu[4];
+                line_menu[4].classList.add("active");
+                line_contact_us=line_menu[4].classList.contains("active");
 
             } else {
 
-                if(e.target.innerHTML=="Project") {
+                if(name_menu=="Project") {
 
-                    $(document).ready(function() {
-
-                        $("html").animate({scrollTop: 1730.5});
-                    });                
+                    $(document).ready(function() { $("html").animate({scrollTop: 1730.5}); });                
+                    line_menu_click=line_menu[2];
+                    line_menu[2].classList.add("active");
+                    line_project=line_menu[2].classList.contains("active");
                 }
             }
         }
@@ -816,68 +794,158 @@ function NAVBAR_BUTTON_LG (e) {
     } else {
 
         attribute_nav_prev.removeAttribute("style");
-        e.target.setAttribute("style","color: #808080; border-bottom: #ffffff solid 1px;");
+        e.target.setAttribute("style","color: #808080");
         attribute_nav_prev=e.target;
         boolean_nav_prev=e.target.hasAttribute("style");
 
         if(browser_name=="Firefox") {
 
-            if (e.target.innerHTML=="Services") {
+            if (name_menu=="Services") {
 
-                $(document).ready(function(){
+                $(document).ready(function(){ $("html").animate({scrollTop: 1115.5},1000,"jswing") });
+                line_menu_click.removeAttribute("style");
+                line_menu_click.classList.remove("active");
+                line_menu[1].classList.add("active");
+                line_services=line_menu[1].classList.contains("active");
 
-                    $("html").animate({scrollTop: 1115.5},1000,"jswing");
-                });
+                    if(line_menu_click==line_menu[4]) {
 
-            } else if(e.target.innerHTML=="Contact Us") {
+                        line_contact_us=line_menu_click.classList.contains("active");
 
-                  $(document).ready(function() {
+                    } else {
 
-                        $("html").animate({scrollTop: 2095},1000,"jswing");
-                    });                   
+                        if(line_menu_click==line_menu[2]) {
+
+                            line_project=line_menu_click.classList.contains("active");
+                        }
+                    }
+
+                line_menu_click=line_menu[1];
+
+            } else if(name_menu=="Contact Us") {
+
+                  $(document).ready(function() { $("html").animate({scrollTop: 2095},1000,"jswing") });
+                  line_menu_click.removeAttribute("style");
+                  line_menu_click.classList.remove("active");
+                  line_menu[4].classList.add("active");
+                  line_contact_us=line_menu[4].classList.contains("active");
+
+                    if(line_menu_click==line_menu[1]) {
+
+                        line_services=line_menu_click.classList.contains("active");
+
+                    } else {
+
+                        if(line_menu_click==line_menu[2]) {
+
+                            line_project=line_menu_click.classList.contains("active");
+                        }
+                    }
+
+                  line_menu_click=line_menu[4];
 
             } else {
 
-                if(e.target.innerHTML=="Project") {
+                if(name_menu=="Project") {
 
-                    $(document).ready(function(){
+                    $(document).ready(function(){ $("html").animate({scrollTop: 1730.5},1000,"jswing") });
+                    line_menu_click.removeAttribute("style");
+                    line_menu_click.classList.remove("active");
+                    line_menu[2].classList.add("active");
+                    line_project=line_menu[2].classList.contains("active");                                            
 
-                        $("html").animate({scrollTop: 1730.5},1000,"jswing");
-                    });                
+                        if(line_menu_click==line_menu[1]) {
+
+                            line_services=line_menu_click.classList.contains("active");
+
+                        } else {
+
+                            if(line_menu_click==line_menu[4]) {
+
+                                line_contact_us=line_menu_click.classList.contains("active");
+                            }
+                        }
+
+                    line_menu_click=line_menu[2];
                 }
             }
 
         } else {
 
-            if (e.target.innerHTML=="Services") {
+            if (name_menu=="Services") {
 
-                $(document).ready(function(){
+                $(document).ready(function(){ $("html").animate({scrollTop: 1115.5}) });
+                line_menu_click.removeAttribute("style");
+                line_menu_click.classList.remove("active");
+                line_menu[1].classList.add("active");
+                line_services=line_menu[1].classList.contains("active");
 
-                    $("html").animate({scrollTop: 1115.5});
-                });
+                    if(line_menu_click==line_menu[4]) {
 
-            } else if(e.target.innerHTML=="Contact Us") {
+                        line_contact_us=line_menu_click.classList.contains("active");
 
-                  $(document).ready(function() {
+                    } else {
 
-                        $("html").animate({scrollTop: 2095});
-                    });                
+                        if(line_menu_click==line_menu[2]) {
+
+                            line_project=line_menu_click.classList.contains("active");
+                        }
+                    }
+
+                line_menu_click=line_menu[1];                
+
+            } else if(name_menu=="Contact Us") {
+
+                $(document).ready(function() { $("html").animate({scrollTop: 2095}) });
+                line_menu_click.removeAttribute("style");
+                line_menu_click.classList.remove("active");
+                line_menu[4].classList.add("active");
+                line_contact_us=line_menu[4].classList.contains("active");
+
+                    if(line_menu_click==line_menu[1]) {
+
+                        line_services=line_menu_click.classList.contains("active");
+
+                    } else {
+
+                        if(line_menu_click==line_menu[2]) {
+
+                            line_project=line_menu_click.classList.contains("active");
+                        }
+                    }
+
+                line_menu_click=line_menu[4];                
 
             } else {
 
-                if(e.target.innerHTML=="Project") {
+                if(name_menu=="Project") {
 
-                    $(document).ready(function(){
+                    $(document).ready(function(){ $("html").animate({scrollTop: 1730.5}) });
+                    line_menu_click.removeAttribute("style");
+                    line_menu_click.classList.remove("active");
+                    line_menu[2].classList.add("active");
+                    line_project=line_menu[2].classList.contains("active");                                            
 
-                        $("html").animate({scrollTop: 1730.5});
-                    });                
+                        if(line_menu_click==line_menu[1]) {
+
+                            line_services=line_menu_click.classList.contains("active");
+
+                        } else {
+
+                            if(line_menu_click==line_menu[4]) {
+
+                                line_contact_us=line_menu_click.classList.contains("active");
+                            }
+                        }
+
+                    line_menu_click=line_menu[2];                    
                 }
             }            
         }
     }  
 }
 
-function NAVBAR_BUTTON_SM (e) {
+function NAVBAR_SM_CLICK (e) {
 
     if(boolean_nav_prev==false) {
 
@@ -1000,6 +1068,65 @@ function NAVBAR_BUTTON_SM (e) {
     }  
 }
 
+function NAVBAR_LG_MOUSEOVER(e) {
+
+    name_menu=e.target.innerHTML.split("<div")[0].split("\n")[1].trim();
+    
+    if(name_menu=="About") {
+
+        line_menu[0].setAttribute("style","width: 100%");
+
+    } else if (name_menu=="Services") {
+
+        line_menu[1].setAttribute("style","width: 100%");
+
+    } else if (name_menu=="Project") {
+
+        line_menu[2].setAttribute("style","width: 100%");
+
+    } else if (name_menu=="Career") {
+
+        line_menu[3].setAttribute("style","width: 100%")
+
+    } else {
+
+        line_menu[4].setAttribute("style","width: 100%")
+    } 
+}
+
+function NAVBAR_LG_MOUSEOUT(e) {
+
+    if(name_menu=="About") {
+
+        line_menu[0].removeAttribute("style")
+
+    } else if (name_menu=="Services") {
+
+        if(line_services==false) {
+
+            line_menu[1].removeAttribute("style")
+        }
+
+    } else if (name_menu=="Project") {
+
+        if (line_project==false) {
+
+            line_menu[2].removeAttribute("style")
+        }
+
+    } else if (name_menu=="Career") {
+
+        line_menu[3].removeAttribute("style")
+
+    } else {
+
+        if(line_contact_us==false) {
+
+            line_menu[4].removeAttribute("style")
+        }
+    } 
+}
+
 var Navbar_Toggler=document.querySelector('button.navbar-toggler');
 Navbar_Toggler.addEventListener("click",NavCollapse);
 
@@ -1008,7 +1135,7 @@ carousel.addEventListener("mouseover",CAROUSEL_OVER);
 carousel.addEventListener("mouseout",CAROUSEL_OUT);
 
 var submit_md=document.querySelector(".d-md-inline [type='submit']");
-submit_md.addEventListener("click",validation_form_md);
+submit_md.addEventListener("clicsk",validation_form_md);
 
 var submit_sm=document.querySelector(".d-md-none [type='submit']");
 submit_sm.addEventListener("click",validation_form_xs);
@@ -1038,37 +1165,49 @@ var nav_button_lg=document.querySelectorAll(".navbar-expand .navbar-text");
 
   for(var i=0; i<nav_button_lg.length; i++) {
 
-      nav_button_lg[i].addEventListener("click",NAVBAR_BUTTON_LG);
+      nav_button_lg[i].addEventListener("click",NAVBAR_LG_CLICK);
   }
+
+  for(var i=0; i<nav_button_lg.length; i++) {
+
+      nav_button_lg[i].addEventListener("mouseover",NAVBAR_LG_MOUSEOVER);
+  }  
+
+  for(var i=0; i<nav_button_lg.length; i++) {
+
+      nav_button_lg[i].addEventListener("mouseout",NAVBAR_LG_MOUSEOUT);
+  }    
 
 var nav_button_sm=document.querySelectorAll(".nav-collapse .navbar-text");
 
   for(var i=0; i<nav_button_sm.length; i++) {
 
-      nav_button_sm[i].addEventListener("click",NAVBAR_BUTTON_SM);
+      nav_button_sm[i].addEventListener("click",NAVBAR_SM_CLICK);
   }
 
 if (location.search=="?services-lg") {
 
-    nav_button_lg[1].setAttribute("style","color: #808080; border-bottom: #ffffff solid 1px;")
+    nav_button_lg[1].setAttribute("style","color: #808080")
     attribute_nav_prev=nav_button_lg[1];
     boolean_nav_prev=nav_button_lg[1].hasAttribute("style");
+    line_menu[1].setAttribute("style","width: 100%");
 
-        $(document).ready(function(){
-
-            $("html").animate({scrollTop: 1115.5},1000,"jswing");
-        });
+        $(document).ready(function(){ $("html").animate({scrollTop: 1115.5},1000,"jswing") });
+        line_menu_click=line_menu[1];
+        line_menu[1].classList.add("active");
+        line_services=line_menu[1].classList.contains("active");
 
 } else if(location.search=="?project-lg") {
 
-    nav_button_lg[2].setAttribute("style","color: #808080; border-bottom: #ffffff solid 1px;")
+    nav_button_lg[2].setAttribute("style","color: #808080")
     attribute_nav_prev=nav_button_lg[2];
     boolean_nav_prev=nav_button_lg[2].hasAttribute("style");
+    line_menu[2].setAttribute("style","width: 100%");
 
-        $(document).ready(function(){
-
-            $("html").animate({scrollTop: 1730.5},1000,"jswing");
-        });
+        $(document).ready(function(){ $("html").animate({scrollTop: 1730.5},1000,"jswing") });
+        line_menu_click=line_menu[2];
+        line_menu[2].classList.add("active");
+        line_project=line_menu[2].classList.contains("active");        
 
 } else if (location.search=="?services-xs") {
 

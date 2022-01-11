@@ -1,5 +1,7 @@
 
 var nav_collapse=document.querySelectorAll(".nav-collapse");
+var line_menu=document.querySelectorAll(".navbar-text .line-navbar-menu");
+var name_menu;
 
 function NavCollapse () {
 
@@ -19,23 +21,66 @@ function NavCollapse () {
 var Navbar_Toggler=document.querySelector('button.navbar-toggler');
 Navbar_Toggler.addEventListener("click",NavCollapse);
 
-$(document).ready(function() {
+function NAVBAR_LG_MOUSEOVER(e) {
 
-    // $(".btn").click(function(){
+    name_menu=e.target.innerHTML.split("<div")[0].split("\n")[1].trim();
+    
+    if (name_menu=="Services") {
 
-    //     // $(".percobaan").slideToggle("slow");
-    //     $(".percobaan").animate({
+        line_menu[1].setAttribute("style","width: 100%");
 
-    //         // width:"70%",
-    //         width:"toggle"
+    } else if (name_menu=="Project") {
 
-    //     },1000,"easeOutBounce");
-    // });
-    $(".btn").on("click",function(){
+        line_menu[2].setAttribute("style","width: 100%");
 
-        $(".percobaan").fadeToggle(1000);
-    });
-});
+    } else if (name_menu=="Career") {
+
+        line_menu[3].setAttribute("style","width: 100%")
+
+    } else {
+
+        if (name_menu=="Contact Us") {
+
+            line_menu[4].setAttribute("style","width: 100%")
+        }
+    } 
+}
+
+function NAVBAR_LG_MOUSEOUT(e) {
+
+    if (name_menu=="Services") {
+
+        line_menu[1].removeAttribute("style")
+
+    } else if (name_menu=="Project") {
+
+        line_menu[2].removeAttribute("style")
+
+    } else if (name_menu=="Career") {
+
+        line_menu[3].removeAttribute("style")
+
+    } else {
+
+        if (name_menu=="Contact Us") {
+
+            line_menu[4].removeAttribute("style")
+        }                
+    } 
+}
+
+var nav_button_lg=document.querySelectorAll(".navbar-expand .navbar-text");
+
+  for(var i=0; i<nav_button_lg.length; i++) {
+
+      nav_button_lg[i].addEventListener("mouseover",NAVBAR_LG_MOUSEOVER);
+  }  
+
+  for(var i=0; i<nav_button_lg.length; i++) {
+
+      nav_button_lg[i].addEventListener("mouseout",NAVBAR_LG_MOUSEOUT);
+  }    
+
 
 
 

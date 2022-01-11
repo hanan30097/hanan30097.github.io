@@ -22,12 +22,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-.percobaan {
-
-	width: 50%;
-	height: 400px;
-}
-
 /*NAVBAR - COMPONENT*/
 
 nav .label-company {
@@ -38,16 +32,38 @@ nav .label-company {
 a.navbar-text {
 
 	position: relative;
-	bottom: 0.01px;
 	text-decoration: none;
 	color: inherit;
+}
+
+.navbar-nav .navbar-text {
+
+	top: 7px;
+	transform: scale(1,1);
+	transition: transform 0.3s ease 0s;
 }
 
 .navbar-nav .navbar-text:hover {
 
 	color: #808080;
-	border-bottom: #ffffff solid 1px;
 	cursor: pointer;
+	transform: scale(1.07,1.07);
+}
+
+.navbar-text .line-navbar-menu {
+
+	background-color: whitesmoke;
+	width: 0%;
+	height: 2px;
+	top: 3px;
+	position: relative;
+	border-radius: 2px 2px 2px 2px;
+	transition: width 0.3s ease 0s;
+}
+
+.nav-collapse .navbar-text {
+
+	bottom: 0.01px;
 }
 
 .nav-collapse {
