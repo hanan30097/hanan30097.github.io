@@ -993,7 +993,21 @@ function NAVBAR_SM_CLICK (e) {
             $(document).ready(function(){
 
                 $("html").scrollTop(2430.5);
-            });                                    
+            });
+
+        } else if (e.target.id=="menu-contact-sm") {
+
+            $(document).ready(function(){
+
+                $("html").scrollTop(2660);
+            });     
+
+        } else if (e.target.id=="menu-contact-md") {
+
+            $(document).ready(function(){
+
+                $("html").scrollTop(1940);
+            });                             
 
         } else {
 
@@ -1054,6 +1068,20 @@ function NAVBAR_SM_CLICK (e) {
 
                 $("html").scrollTop(2430.5);
             });                                    
+
+        } else if (e.target.id=="menu-contact-sm") {
+
+            $(document).ready(function(){
+
+                $("html").scrollTop(2660);
+            });     
+
+        } else if (e.target.id=="menu-contact-md") {
+
+            $(document).ready(function(){
+
+                $("html").scrollTop(1940.5);
+            });                                         
 
         } else {
 
@@ -1207,7 +1235,19 @@ if (location.search=="?services-lg") {
         $(document).ready(function(){ $("html").animate({scrollTop: 1730.5},1000,"jswing") });
         line_menu_click=line_menu[2];
         line_menu[2].classList.add("active");
-        line_project=line_menu[2].classList.contains("active");        
+        line_project=line_menu[2].classList.contains("active");
+
+} else if(location.search=="?contact-lg") {
+
+    nav_button_lg[4].setAttribute("style","color: #808080")
+    attribute_nav_prev=nav_button_lg[4];
+    boolean_nav_prev=nav_button_lg[4].hasAttribute("style");
+    line_menu[4].setAttribute("style","width: 100%");
+
+        $(document).ready(function(){ $("html").animate({scrollTop: 2095},1000,"jswing") });
+        line_menu_click=line_menu[4];
+        line_menu[4].classList.add("active");
+        line_contact_us=line_menu[4].classList.contains("active");
 
 } else if (location.search=="?services-xs") {
 
@@ -1231,6 +1271,17 @@ if (location.search=="?services-lg") {
             $("html").scrollTop(1970);
         });
 
+} else if (location.search=="?contact-xs") {
+
+    nav_button_sm[4].setAttribute("style","color: darkred")
+    attribute_nav_prev=nav_button_sm[4];
+    boolean_nav_prev=nav_button_sm[4].hasAttribute("style");
+
+        $(document).ready(function(){
+
+            $("html").scrollTop(2430.5);
+        });        
+
 } else if (location.search=="?services-md") {
 
     nav_button_sm[7].setAttribute("style","color: darkred")
@@ -1251,6 +1302,17 @@ if (location.search=="?services-lg") {
         $(document).ready(function(){
 
             $("html").scrollTop(1570);
+        });
+
+} else if (location.search=="?contact-md") {
+
+    nav_button_sm[12].setAttribute("style","color: darkred")
+    attribute_nav_prev=nav_button_sm[12];
+    boolean_nav_prev=nav_button_sm[12].hasAttribute("style");
+
+        $(document).ready(function(){
+
+            $("html").scrollTop(1940);
         });                
 
 } else if (location.search=="?services-sm") {
@@ -1263,6 +1325,17 @@ if (location.search=="?services-lg") {
 
             $("html").scrollTop(1090);
         });
+
+} else if (location.search=="?contact-sm") {
+
+    nav_button_sm[11].setAttribute("style","color: darkred")
+    attribute_nav_prev=nav_button_sm[11];
+    boolean_nav_prev=nav_button_sm[11].hasAttribute("style");
+
+        $(document).ready(function(){
+
+            $("html").scrollTop(2660);
+        });        
 
 } else {
 
